@@ -21,14 +21,14 @@ function header(path) {
 
 function footer(path) {
   return `<footer class="foot">
-    <a class="foot-mail" href="mailto:${contact.email}">${contact.email}</a>
+    ${path === '/contact/' ? '' : `<a class="foot-mail" href="mailto:${contact.email}">Let’s talk</a>`}
     <div class="foot-row">
       <p class="foot-mark">Storm Nijhuis</p>
       <ul class="foot-links">
+        <li>Amsterdam, NL</li>
         <li><a href="${contact.instagram}" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-        <li><a href="${contact.cv}" target="_blank" rel="noopener">CV</a></li>
-        <li>Amsterdam</li>
-        <li>© ${new Date().getUTCFullYear()}</li>
+        <li><a href="/contact/">Contact</a></li>
+        <li>© ${new Date().getUTCFullYear()} Storm Nijhuis</li>
       </ul>
     </div>
     <nav class="foot-legal" aria-label="Legal and accessibility">${legalLinks.map(([name, href]) => `<a href="${href}"${path === href ? ' aria-current="page"' : ''}>${name}</a>`).join('')}</nav>

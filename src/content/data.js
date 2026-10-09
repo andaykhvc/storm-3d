@@ -14,7 +14,7 @@ export const looks = Array.from({ length: lookbookSource.length / 4 }, (_, i) =>
 }))
   .filter((look) => !OMITTED_SETS.includes(look.source))
   .map((look, i) => ({ ...look, number: String(i + 1).padStart(2, '0') }));
-export const VIEWS = ['Front', 'Side', 'Back', 'Other side'];
+export const VIEWS = ['Front', 'Side', 'Back', 'Alternate view'];
 
 export const editorial = [...group('editorial-v1'), ...group('editorial-v2')];
 export const presentation = ['presentation-8536', 'presentation-8537', 'presentation-8535', 'presentation-8540', 'presentation-8538', 'presentation-8539'];
@@ -26,7 +26,6 @@ export const film = {
   title: 'Hellion',
   format: 'A short fashion film',
   status: 'Upcoming',
-  location: 'Shot in Pieterskerk, Utrecht',
   logline: 'Made alongside the Hellion collection, the film follows a mischievous outsider into an otherworldly church, where he challenges the religious judgement that made him feel like a sinner.',
   synopsis: [
     'As the church bells ring, Hellion arrives in a place where sacred rules decide what is good and what is sinful. He interrupts its rituals and acts on the desires he was taught to fear. His rebellion brings him into conflict with the Nun, who stands for the rules he is trying to escape.',
@@ -34,7 +33,7 @@ export const film = {
   ],
   concept: [
     'The film was made alongside my Hellion collection. The garments become the characters’ clothing: oversized collars, horns and sculptural silhouettes exaggerate the authority and expectations associated with religious dress.',
-    'I developed the fashion design, concept and creative direction for the project. The treatment brings together the clothing, casting and setting, with distorted perspectives, warm light and the sound of church bells.',
+    'I developed the fashion design, concept and creative direction for the project. The treatment brings together the clothing, casting and setting, with distorted perspectives, warm light and the sound of church bells. The film was shot in Pieterskerk in Utrecht.',
   ],
   // Viewing order, not file order.
   stills: ['film-13', 'film-12', 'film-08', 'film-02', 'film-04', 'film-05', 'film-03', 'film-06', 'film-07', 'film-01', 'film-09', 'film-10', 'film-11'],
@@ -43,13 +42,13 @@ export const film = {
 // The work, in the order the site presents it. `photos` is what each project contributes to the table.
 export const projects = [
   {
-    slug: 'hellion', href: '/hellion/', title: 'Hellion', short: 'Hellion', cta: 'See the Hellion collection', kind: 'Collection', year: '2026', cover: 'editorial-v1-17',
+    slug: 'hellion', href: '/hellion/', title: 'Hellion', short: 'Hellion', cta: 'View the Hellion collection', kind: 'Collection · Lookbook · Editorial', year: '2026', cover: 'editorial-v1-17',
     photos: [...looks.flatMap((look) => look.images), ...editorial, ...presentation],
   },
-  { slug: 'anima-obscura', href: '/anima-obscura/', title: 'Anima Obscura', short: 'Anima Obscura', cta: 'See Anima Obscura', kind: 'Fashion editorial with Denise Bakker', cover: 'anima-08', photos: anima },
-  { slug: 'styling', href: '/styling/', title: 'Styling', short: 'Styling', cta: 'See the styling work', kind: 'Assisting Annet Veerbeek', cover: 'styling-9337', photos: styling },
-  { slug: 'film', href: '/film/', title: 'Hellion, the film', short: 'Film', cta: 'See the film', kind: 'A short fashion film, upcoming', cover: 'film-08', photos: film.stills },
-  { slug: 'studio', href: '/about/', title: 'Studio', short: 'Studio', cta: 'Meet Storm', kind: 'Storm at work', cover: 'about-02', photos: studio },
+  { slug: 'anima-obscura', href: '/anima-obscura/', title: 'Anima Obscura', short: 'Anima Obscura', cta: 'View Anima Obscura', kind: 'Fashion editorial · With Denise Bakker', cover: 'anima-08', photos: anima },
+  { slug: 'styling', href: '/styling/', title: 'Styling', short: 'Styling', cta: 'View the styling', kind: 'Internship · Styling assistance', cover: 'styling-9337', photos: styling },
+  { slug: 'film', href: '/film/', title: 'Hellion, a short fashion film', short: 'Film', cta: 'View the film', kind: 'Upcoming', cover: 'film-08', photos: film.stills },
+  { slug: 'studio', href: '/about/', title: 'Studio', short: 'Studio', cta: 'Meet Storm', kind: 'In the studio', cover: 'about-02', photos: studio },
 ];
 export const projectOf = new Map(projects.flatMap((project) => project.photos.map((id) => [id, project])));
 // Every photograph the public site shows, once.
@@ -61,10 +60,18 @@ export const biography = [
   'My work includes latex, textile development and historical pattern cutting. I also work in styling, where I enjoy responding to different people and different briefs. Through my brand Hellion, I explore identity and religious symbolism with exaggerated silhouettes, humour and contrast.',
 ];
 
+// About page, "Background".
+export const background = [
+  'I grew up in Zutphen, where I never quite felt like I fitted in. Making and styling clothes gave me a way to express myself.',
+  'I studied Product Design with a focus on textiles at CIBAP. Alongside sewing and material development, I worked with 3D sculpting and 3D printing. At AMFI, I explored fashion design, historical pattern cutting and the relationship between the body and the materials around it.',
+  'During an exchange at the Swedish School of Textiles, I experimented with designing from materials. At Untitled Rubber, I worked with latex clothing and construction. I still use material experimentation as a starting point for garments.',
+  'My brand Hellion looks at how we are judged and how we choose to express ourselves. The 2026 collection draws on my experience of growing up queer, using religious symbolism and exaggerated historical silhouettes.',
+];
+
 export const experience = {
-  education: [['2022–2026', 'AMFI', 'Fashion Design'], ['Exchange', 'Swedish School of Textiles', 'Material research'], ['2018–2022', 'CIBAP', 'Product Design, textiles']],
-  internships: [['Untitled Rubber', 'Design and fabrication'], ['Annet Veerbeek', 'Styling assistance'], ['Zyanya Keizer', 'Couture and garment construction'], ['House of Useless', 'Atelier and pattern cutting'], ['Liesbeth Sterkenburg', 'Atelier and pattern cutting']],
-  work: [['2026', 'Lichting', 'Finalist'], ['2025', 'Zipper Vintage', 'Styling and visual merchandising'], ['2022', 'H&M', 'Garment alterations and sales']],
+  education: [['2022–2026', 'AMFI', 'Fashion Design'], ['Exchange', 'Swedish School of Textiles', 'Material research'], ['2018–2022', 'CIBAP', 'Product Design · Textiles']],
+  internships: [['Untitled Rubber', 'Design & fabrication'], ['Annet Veerbeek', 'Styling assistance'], ['Zyanya Keizer', 'Couture & garment construction'], ['House of Useless', 'Atelier & pattern cutting'], ['Liesbeth Sterkenburg', 'Atelier & pattern cutting']],
+  work: [['2025', 'Zipper Vintage', 'Styling & visual merchandising'], ['2022', 'H&M', 'Garment alterations & sales'], ['2026', 'Lichting', 'Finalist']],
   skills: 'Pattern cutting, latex, draping, textile development, tufting, 3D sculpting and garment construction.',
 };
 
@@ -86,19 +93,19 @@ export const legal = {
   deploymentPrivacyVerified: false,
 };
 
-export const legalLinks = [['Privacy', '/privacy/'], ['Business details', '/legal/'], ['Cookies', '/cookies/'], ['Accessibility', '/accessibility/'], ['Enquiries and commissions', '/terms/']];
+export const legalLinks = [['Privacy', '/privacy/'], ['Business details', '/legal/'], ['Cookies', '/cookies/'], ['Accessibility', '/accessibility/'], ['Enquiries & commissions', '/terms/']];
 
 export const routes = {
-  '/': { title: 'Storm Nijhuis — Fashion design, styling and creative direction', description: 'Amsterdam-based fashion designer, stylist and creative director. Explore every photograph of Hellion, Anima Obscura, styling work and an upcoming film.' },
-  '/hellion/': { title: 'Hellion', description: 'Hellion, a 2026 collection by Storm Nijhuis: seven looks, the editorial and the presentation at Lichting.' },
-  '/anima-obscura/': { title: 'Anima Obscura', description: 'A fashion editorial exploring the hidden self, by Storm Nijhuis and Denise Bakker.' },
-  '/styling/': { title: 'Styling', description: 'Styling assistance by Storm Nijhuis during his internship with Annet Veerbeek.' },
-  '/film/': { title: 'Hellion, a short fashion film', description: 'An upcoming short fashion film based on the Hellion collection. A rebellious outsider challenges religious judgement in an otherworldly church.' },
-  '/about/': { title: 'About', description: 'Meet Storm Nijhuis: fashion designer, stylist, creative director and Lichting finalist, based in Amsterdam.' },
+  '/': { title: 'Storm Nijhuis — Fashion Design, Styling & Creative Direction', description: 'Amsterdam-based fashion designer, stylist and creative director. Selected work, collections and film by Storm Nijhuis.' },
+  '/hellion/': { title: 'Hellion', description: 'Hellion, a 2026 collection by Storm Nijhuis. The complete lookbook, editorial photography and presentation.' },
+  '/anima-obscura/': { title: 'Anima Obscura', description: 'A fashion editorial by Storm Nijhuis and Denise Bakker. Explore the complete photographic series.' },
+  '/styling/': { title: 'Styling', description: 'Selected styling assistance work by Storm Nijhuis, during his internship with Annet Veerbeek.' },
+  '/film/': { title: 'Hellion, a short fashion film', description: 'Hellion, an upcoming short fashion film based on Storm Nijhuis’s collection. A rebellious outsider challenges religious judgement in an otherworldly church.' },
+  '/about/': { title: 'About', description: 'Meet Storm Nijhuis. Fashion designer, stylist, creative director and Lichting finalist based in Amsterdam.' },
   '/contact/': { title: 'Contact', description: 'Contact Storm Nijhuis for fashion design, styling, creative direction and collaborations.' },
-  '/privacy/': { title: 'Privacy', description: 'How Storm Nijhuis handles enquiries and personal data, including hosting, service providers and your privacy rights.' },
-  '/legal/': { title: 'Business details', description: 'Business identification and contact information for Storm Nijhuis, fashion designer, stylist and creative director in Amsterdam.' },
-  '/cookies/': { title: 'Cookies', description: 'Cookies, browser storage and external services on the Storm Nijhuis website.' },
-  '/accessibility/': { title: 'Accessibility', description: 'Accessibility features, keyboard controls and how to get help using the Storm Nijhuis website and CV.' },
-  '/terms/': { title: 'Enquiries and commissions', description: 'How to enquire about fashion design, styling and creative direction, and how commissions and consumer rights are agreed.' },
+  '/privacy/': { title: 'Privacy', description: 'How Storm Nijhuis handles enquiries and personal data, including website hosting, service providers and your privacy rights.' },
+  '/legal/': { title: 'Business details', description: 'Business identification and contact information for Storm Nijhuis, a fashion designer, stylist and creative director in Amsterdam.' },
+  '/cookies/': { title: 'Cookies', description: 'Information about cookies, browser storage and external services on the Storm Nijhuis portfolio website.' },
+  '/accessibility/': { title: 'Accessibility', description: 'Accessibility features, keyboard controls and how to request help using the Storm Nijhuis portfolio and CV.' },
+  '/terms/': { title: 'Enquiries & commissions', description: 'How to enquire about fashion design, styling and creative direction, and how commission details and consumer rights are agreed.' },
 };

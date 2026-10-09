@@ -10,8 +10,6 @@ const written = {
   'editorial-v2-07': 'Full-length Hellion look with sculptural sleeves, a latex blouse and a fitted skirt.',
   'editorial-v2-19': 'Full-length Hellion look with a feathered headpiece and a sheer skirt with a sweeping train.',
   'editorial-v2-29': 'Two Hellion silhouettes photographed against a textured wall.',
-  'editorial-v1-17': 'A model in a sculptural Hellion look of black feathered strips, with a tall horned headpiece.',
-  'editorial-v1-15': 'A model in a white horned headpiece and a black beaded Hellion look.',
   'presentation-8537': 'Storm Nijhuis presenting his collection book alongside the Hellion garments and models.',
   'presentation-8536': 'Storm Nijhuis speaking about his collection, with models wearing Hellion behind him.',
   'presentation-8539': 'Five models wearing Hellion at a collection presentation.',
@@ -27,11 +25,11 @@ export function describe(id) {
   const n = Number(id.split('-').at(-1));
   if (asset.group === 'lookbook') {
     const look = looks.find((entry) => entry.images.includes(id));
-    return `Hellion lookbook, look ${look.number}, ${VIEWS[look.images.indexOf(id)].toLowerCase()} view. The full garment silhouette.`;
+    return `Hellion lookbook, look ${look.number}, ${['front', 'side', 'back', 'alternate side'][look.images.indexOf(id)]} view. Full garment silhouette.`;
   }
   if (asset.group.startsWith('editorial')) return `Hellion editorial photograph ${n}, series ${asset.group.endsWith('v1') ? 'one' : 'two'}.`;
-  if (asset.group === 'anima') return `Anima Obscura, a black and white fashion editorial by Storm Nijhuis and Denise Bakker, photograph ${n}.`;
-  if (asset.group === 'styling') return `Fashion portrait from Storm Nijhuis’s styling assistance with Annet Veerbeek, image ${n}.`;
+  if (asset.group === 'anima') return `Anima Obscura, black and white fashion editorial by Storm Nijhuis and Denise Bakker, photograph ${n}.`;
+  if (asset.group === 'styling') return `Fashion portrait from Storm Nijhuis's styling assistance with Annet Veerbeek, image ${n}.`;
   if (asset.group === 'film') return `Still ${n} from Hellion, an upcoming short fashion film.`;
   return id === 'about-01' ? 'Portrait of Storm Nijhuis.' : 'Storm Nijhuis working on the sculptural garments for Hellion in the studio.';
 }

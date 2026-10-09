@@ -32,7 +32,7 @@ function strip(ids, set) {
   }).join('')}</div></div></div>`;
 }
 
-const next = (href, title) => `<nav class="next" aria-label="Next project"><a href="${href}"><span>Next</span><span class="next-title">${title}</span></a></nav>`;
+const next = (href, title, lead = 'Next project') => `<nav class="next" aria-label="${lead}"><a href="${href}"><span>${lead}</span><span class="next-title">${title}</span></a></nav>`;
 
 export function hellion() {
   const lookbook = looks.flatMap((look) => look.images);
@@ -45,13 +45,13 @@ export function hellion() {
     <section class="prologue" aria-label="About the collection">
       <p class="statement">They called me a sinner, so I became their hellion.</p>
       <div class="prose">
-        <p>Hellion is a fashion protest and a persona. Growing up queer in a small town, I learned what it meant to be seen as different. This collection turns that judgement into a way to claim space.</p>
+        <p>Hellion is a fashion protest and a persona. Growing up queer in a small town, I learned what it meant to be seen as different. This collection turns that judgment into a way to claim space.</p>
         <p>Historical silhouettes, sculptural materials and religious symbolism question the line between purity and sin, softness and aggression.</p>
       </div>
-      <dl class="facts"><dt>Design</dt><dd>Fashion and material design by Storm Nijhuis</dd><dt>Shown</dt><dd>Lichting, 2026</dd></dl>
+      <dl class="facts"><dt>Fashion & material design</dt><dd>Storm Nijhuis</dd><dt>Presented at Lichting</dt><dd>2026</dd></dl>
     </section>
     <section class="chapter" aria-labelledby="looks-title">
-      <h2 class="chapter-title" id="looks-title">Seven looks</h2>
+      <h2 class="chapter-title" id="looks-title">Lookbook</h2>
       ${turntable(lookbook)}
       <div class="looks">${looks.map((look) => `<div class="look">
         <h3 class="look-number"><span class="sr-only">Look </span>${look.number}</h3>
@@ -61,12 +61,12 @@ export function hellion() {
     <section class="chapter" aria-labelledby="editorial-title">
       <h2 class="chapter-title" id="editorial-title">Editorial</h2>
       ${strip(EDITORIAL_STRIP, editorial)}
-      <h3 class="chapter-sub">Every frame, in order</h3>
+      <h3 class="chapter-sub">Explore the complete editorial</h3>
       ${sheet(editorial, { sizes: '(max-width: 760px) 50vw, 24vw' })}
     </section>
     <section class="chapter" aria-labelledby="presentation-title">
-      <h2 class="chapter-title" id="presentation-title">At Lichting</h2>
-      <p class="chapter-line">From the studio to the presentation: the garments, the research and the person behind them.</p>
+      <h2 class="chapter-title" id="presentation-title">Behind the collection</h2>
+      <p class="chapter-line">From the studio to the presentation. A look at the garments, the research and the person behind them.</p>
       ${sheet(presentation, { sizes: '(max-width: 760px) 50vw, 32vw' })}
     </section>
     ${next('/anima-obscura/', 'Anima Obscura')}
@@ -83,24 +83,24 @@ export function animaObscura() {
     <section class="prologue" aria-label="About the editorial">
       <p class="statement">Between a dream and a nightmare.</p>
       <div class="prose">
-        <p>Inspired by Jung’s idea of the dark anima, the series moves between intimacy and estrangement, light and shadow.</p>
+        <p>A fashion editorial exploring the hidden self. Inspired by Jung’s idea of the dark anima, the series moves between intimacy and estrangement, light and shadow.</p>
         <p>Fashion design and styling by Storm Nijhuis. Concept and creative direction with Denise Bakker.</p>
       </div>
       <dl class="facts">
-        <dt>Concept and creative direction</dt><dd>Storm Nijhuis and Denise Bakker</dd>
-        <dt>Fashion design and styling</dt><dd>Storm Nijhuis</dd>
+        <dt>Concept & creative direction</dt><dd>Storm Nijhuis & Denise Bakker</dd>
+        <dt>Fashion design & styling</dt><dd>Storm Nijhuis</dd>
         <dt>Photography</dt><dd>Denise Bakker</dd>
-        <dt>Models</dt><dd>Luanda Schuster (UNS Models), Jakob Weissbarth (IZAIO Models)</dd>
+        <dt>Models</dt><dd>Luanda Schuster (UNS Models)<br />Jakob Weissbarth (IZAIO Models)</dd>
         <dt>Make-up</dt><dd>Milena Lazija</dd>
         <dt>Hair</dt><dd>Alina Tupalova</dd>
-        <dt>Set and styling assistance</dt><dd>Nora Gustafsson</dd>
+        <dt>Set & styling assistance</dt><dd>Nora Gustafsson</dd>
       </dl>
     </section>
     <section class="chapter" aria-labelledby="series-title">
-      <h2 class="chapter-title" id="series-title">The series</h2>
+      <h2 class="chapter-title" id="series-title">Explore the complete series</h2>
       ${sheet(anima, { sizes: '(max-width: 760px) 50vw, 24vw' })}
     </section>
-    ${next('/styling/', 'Styling')}
+    ${next('/styling/', 'Styling', 'Explore more')}
   </article>`;
 }
 
@@ -110,10 +110,12 @@ export function stylingPage() {
       <h1 class="opening-title gothic">Styling</h1>
       <p class="opening-line">Styling assistance during my internship with Annet Veerbeek.</p>
     </header>
-    <section class="chapter chapter--first" aria-label="Annet Veerbeek internship">
+    <section class="chapter chapter--first" aria-labelledby="internship-title">
+      <h2 class="chapter-title" id="internship-title">Annet Veerbeek</h2>
+      <p class="chapter-line">Internship · Styling assistance</p>
       ${sheet(styling, { sizes: '(max-width: 760px) 50vw, 24vw' })}
     </section>
-    ${next('/film/', 'Hellion, the film')}
+    ${next('/film/', 'Hellion, a short fashion film')}
   </article>`;
 }
 
@@ -122,7 +124,7 @@ export function filmPage() {
   return `<article class="project">
     <header class="opening">
       <h1 class="opening-title gothic">${film.title}</h1>
-      <p class="opening-line">${film.format}. ${film.status}: the full film will be shared after its public release.</p>
+      <p class="opening-line">${film.format}. ${film.status}. The full film will be shared after its public release.</p>
     </header>
     <section class="nave" aria-label="A walk through Pieterskerk, past the stills to the altar">
       <div class="nave-track"><div class="nave-stage">
@@ -134,15 +136,14 @@ export function filmPage() {
     <section class="prologue" aria-label="About the film">
       <p class="statement">${film.logline}</p>
       <div class="prose">${film.synopsis.map((p) => `<p>${p}</p>`).join('')}</div>
-      <dl class="facts"><dt>Status</dt><dd>${film.status}</dd><dt>Location</dt><dd>${film.location.replace('Shot in ', '')}</dd></dl>
     </section>
     <section class="chapter" aria-labelledby="stills-title">
-      <h2 class="chapter-title" id="stills-title">Stills</h2>
+      <h2 class="chapter-title" id="stills-title">Film stills</h2>
       ${sheet(rest, { set: film.stills, start: 2, sizes: '(max-width: 760px) 100vw, 48vw' })}
     </section>
     <section class="prologue" aria-labelledby="concept-title">
       <h2 class="statement" id="concept-title">The collection and the film</h2>
-      <div class="prose">${film.concept.map((p) => `<p>${p}</p>`).join('')}<p><a class="inline" href="/hellion/">See the Hellion collection</a></p></div>
+      <div class="prose">${film.concept.map((p) => `<p>${p}</p>`).join('')}<p><a class="inline" href="/hellion/">View the Hellion collection</a></p></div>
     </section>
     ${next('/hellion/', 'Hellion')}
   </article>`;

@@ -84,7 +84,8 @@ main:focus { outline: none; }
 .table-stage canvas { display: block; width: 100%; height: 100%; }
 /* Controls sit on small black tabs, like tape on a light box, so they read over any photograph. */
 .table-intro, .table-filter, .table-views, .table-caption { position: absolute; z-index: 2; }
-.table-intro { left: var(--gutter); bottom: calc(76px + env(safe-area-inset-bottom)); max-width: 34ch; padding: 10px 12px; margin-left: -12px; background: var(--night); color: var(--ash); font-size: var(--t-s); line-height: 1.5; }
+.table-intro { left: var(--gutter); bottom: calc(76px + env(safe-area-inset-bottom)); max-width: 48ch; padding: 10px 12px; margin-left: -12px; background: var(--night); color: var(--bone); font-size: var(--t-s); line-height: 1.5; }
+.table-intro span { display: block; margin-top: 6px; color: var(--ash); }
 .table-filter { left: var(--gutter); right: 200px; bottom: calc(24px + env(safe-area-inset-bottom)); display: flex; flex-wrap: wrap; gap: 6px; margin-left: -12px; }
 .table-views { right: var(--gutter); bottom: calc(24px + env(safe-area-inset-bottom)); display: flex; gap: 6px; margin-right: -12px; }
 .table-filter > *, .table-views button { padding: 8px 12px; background: var(--night); color: var(--ash); font-size: var(--t-s); line-height: 1.2; white-space: nowrap; transition: color 160ms ease, transform 160ms var(--ease-out); }

@@ -9,7 +9,7 @@ export function home() {
   return `<h1 class="sr-only">Storm Nijhuis, fashion designer, stylist and creative director</h1>
   <section class="table" aria-label="Every photograph of the work">
     <div class="table-stage" data-table aria-hidden="true"></div>
-    <p class="table-intro">Fashion designer, stylist and creative director in Amsterdam. Drag to look through every photograph of the work, and open one to see it full size.</p>
+    <p class="table-intro">Fashion design · Styling · Creative direction<br />Amsterdam, NL / Lichting finalist<br /><span>Drag to look through every photograph, and open one to see it full size.</span></p>
     <p class="table-caption" aria-hidden="true"></p>
     <nav class="table-filter" aria-label="Projects">
       <span class="table-all" aria-current="page">All <sup>${archive.length}</sup></span>
@@ -25,7 +25,7 @@ export function home() {
     <ol class="index-list">${projects.map((project) => `<li>
       <a class="index-row" href="${project.href}">
         <span class="index-name">${project.title}</span>
-        <span class="index-kind">${project.kind}${project.year ? `, ${project.year}` : ''}</span>
+        <span class="index-kind">${project.kind}${project.year ? ` · ${project.year}` : ''}</span>
         <span class="index-count">${plural(project.photos.length)}</span>
         <span class="index-peek">${picture(project.cover, { sizes: '22vw', alt: '' })}</span>
       </a>
