@@ -192,6 +192,8 @@ export function mountTable(stage, { onHover, onOpen, viewerRect, reducedMotion }
   // Skip drawing when nothing on the table has changed since the last frame.
   let lastState = '';
   let fading = false;
+  // The photograph open in the viewer: its place on the table stays empty until it comes back.
+  let held = null;
   let hovered = null;
   let pointer = null;
 
@@ -217,7 +219,7 @@ export function mountTable(stage, { onHover, onOpen, viewerRect, reducedMotion }
     last.y = pos.y;
     if (!reducedMotion()) fx.lens += (clamp(speed / 60, 0, 1) * 0.14 - fx.lens) * 0.12;
 
-    const state = `${pos.x.toFixed(2)},${pos.y.toFixed(2)},${fx.zoom.toFixed(4)},${fx.lens.toFixed(4)},${fx.alpha.toFixed(3)},${view.x},${view.y}`;
+    const state = `${pos.x.toFixed(2)},${pos.y.toFixed(2)},${fx.zoom.toFixed(4)},${fx.lens.toFixed(4)},${fx.alpha.toFixed(3)},${view.x},${view.y},${held}`;
     const idle = state === lastState && !uploaded && !fading && !opening && !queue.length && !loading;
     lastState = state;
     if (!idle) draw(now);
@@ -237,7 +239,7 @@ export function mountTable(stage, { onHover, onOpen, viewerRect, reducedMotion }
       u.uMap.value = texture || blank;
       u.uReady.value = shown * shown * (3 - 2 * shown);
       u.uRect.value.set(tile.x, tile.y, tile.w, tile.h);
-      u.uAlpha.value = opening ? opening.others : fx.alpha;
+      u.uAlpha.value = tile.id === held ? 0 : opening ? opening.others : fx.alpha;
       u.uLens.value = fx.lens;
       u.uZoom.value = fx.zoom;
       m.visible = true;
@@ -318,7 +320,7 @@ export function mountTable(stage, { onHover, onOpen, viewerRect, reducedMotion }
   };
   const onLeave = () => { pointer = null; if (hovered) { hovered = null; onHover(null, null); } };
   const onKey = (event) => {
-    if (opening || event.metaKey || event.ctrlKey || event.altKey) return;
+    if (opening || held || event.metaKey || event.ctrlKey || event.altKey) return;
     if (event.target.closest?.('input, textarea, select, [contenteditable]')) return;
     const step = { ArrowLeft: [1, 0], ArrowRight: [-1, 0], ArrowUp: [0, 1], ArrowDown: [0, -1] }[event.key];
     if (!step) return;
@@ -405,6 +407,29 @@ export function mountTable(stage, { onHover, onOpen, viewerRect, reducedMotion }
       else gsap.to(fx, { alpha: 0, duration: 0.18, ease: 'power2.out', overwrite: true, onComplete: swap });
     },
     start() { frameId = requestAnimationFrame(loop); },
+    // After a lift: drop the lifted copy and bring the table back (the viewer now covers it).
+    settle() {
+      if (!opening) return;
+      gsap.killTweensOf(fx);
+      scene.remove(opening.mesh);
+      opening.mesh.material.dispose();
+      opening = null;
+      fx.alpha = 1;
+      fx.zoom = 1;
+    },
+    hold(id) { held = id; },
+    release() { held = null; },
+    // Where a photograph sits on screen right now (the copy nearest the middle), or null.
+    rectOf(id) {
+      let best = null;
+      let distance = Infinity;
+      for (const t of instances) {
+        if (t.id !== id || t.x + t.w < 0 || t.x > view.x || t.y + t.h < 0 || t.y > view.y) continue;
+        const d = Math.hypot(t.x + t.w / 2 - view.x / 2, t.y + t.h / 2 - view.y / 2);
+        if (d < distance) { distance = d; best = t; }
+      }
+      return best && { left: best.x, top: best.y, width: best.w, height: best.h };
+    },
     pause(paused) {
       cancelAnimationFrame(frameId);
       if (!paused) frameId = requestAnimationFrame(loop);

@@ -27,28 +27,20 @@ function setMeta(path) {
 }
 
 // `ready` resolves when the page is uncovered (opening sheet or ink wash lifting): entrances wait for it.
-function mount(path, { ready = Promise.resolve(), then, inkDuration = 1.1 } = {}) {
+function mount(path, { ready = Promise.resolve(), inkDuration = 1.1 } = {}) {
   const isHome = path === '/';
   root.classList.toggle('is-home', isHome);
   const page = isHome ? null : mountPage(app, path, { ready, inkDuration });
   const viewer = bindViewer(app, { reducedMotion, onToggle: (open) => (open ? page?.lenis?.stop() : page?.lenis?.start()) });
-  const unmountHome = isHome
-    ? mountHome(app, {
-      gate: ready,
-      reducedMotion,
-      // A photograph opened on the table: go to its project, already showing it full frame.
-      onOpen: (id, project) => navigate(project.href, { then: (v) => v.open(id, project.photos, { instant: true }) }),
-    })
-    : () => {};
+  const unmountHome = isHome ? mountHome(app, { gate: ready, reducedMotion, viewer }) : () => {};
   teardown = () => {
     unmountHome();
     viewer.dispose();
     page?.dispose();
   };
-  then?.(viewer);
 }
 
-async function navigate(href, { push = true, then, instant = false } = {}) {
+async function navigate(href, { push = true, instant = false } = {}) {
   if (busy) return;
   const url = new URL(href, location.href);
   const path = normalizePath(url.pathname);
@@ -60,14 +52,13 @@ async function navigate(href, { push = true, then, instant = false } = {}) {
     app.innerHTML = renderPage(path);
     setMeta(path);
     window.scrollTo(0, 0);
-    mount(path, { ready, then });
-    if (!then) app.querySelector('main')?.focus({ preventScroll: true });
+    mount(path, { ready });
+    app.querySelector('main')?.focus({ preventScroll: true });
     if (url.hash) document.getElementById(decodeURIComponent(url.hash.slice(1)))?.scrollIntoView();
   };
   busy = true;
   try {
-    if (then || instant) {
-      // From the light table the lifted photograph is already where the viewer shows it: swap in place.
+    if (instant) {
       // Back and forward are too frequent to animate.
       update();
       uncover();

@@ -87,10 +87,10 @@ main:focus { outline: none; }
 .table-intro { left: var(--gutter); bottom: calc(76px + env(safe-area-inset-bottom)); max-width: 34ch; padding: 10px 12px; margin-left: -12px; background: var(--night); color: var(--ash); font-size: var(--t-s); line-height: 1.5; }
 .table-filter { left: var(--gutter); right: 200px; bottom: calc(24px + env(safe-area-inset-bottom)); display: flex; flex-wrap: wrap; gap: 6px; margin-left: -12px; }
 .table-views { right: var(--gutter); bottom: calc(24px + env(safe-area-inset-bottom)); display: flex; gap: 6px; margin-right: -12px; }
-.table-filter button, .table-views button { padding: 8px 12px; background: var(--night); color: var(--ash); font-size: var(--t-s); line-height: 1.2; white-space: nowrap; transition: color 160ms ease, transform 160ms var(--ease-out); }
-.table-filter button[aria-pressed='true'], .table-views button[aria-pressed='true'] { color: var(--bone); box-shadow: inset 0 -1px 0 var(--bone); }
-.table-filter button:active, .table-views button:active { transform: scale(0.97); }
-@media (hover: hover) and (pointer: fine) { .table-filter button:hover, .table-views button:hover { color: var(--bone); } }
+.table-filter > *, .table-views button { padding: 8px 12px; background: var(--night); color: var(--ash); font-size: var(--t-s); line-height: 1.2; white-space: nowrap; transition: color 160ms ease, transform 160ms var(--ease-out); }
+.table-all, .table-views button[aria-pressed='true'] { color: var(--bone); box-shadow: inset 0 -1px 0 var(--bone); }
+.table-filter a:active, .table-views button:active { transform: scale(0.97); }
+@media (hover: hover) and (pointer: fine) { .table-filter a:hover, .table-views button:hover { color: var(--bone); } }
 .table-filter sup { font-size: 0.68em; color: var(--ash); margin-left: 2px; font-variant-numeric: tabular-nums; }
 .table-caption { top: 0; left: 0; padding: 6px 10px; background: var(--night); font-size: var(--t-xs); line-height: 1.3; white-space: nowrap; pointer-events: none; opacity: 0; transition: opacity 140ms ease; }
 .table-caption.is-on { opacity: 1; }
@@ -242,6 +242,10 @@ main:not([data-route='/']) { padding-top: var(--bar); }
 .viewer-controls button, .viewer-close { padding: 10px 12px; transition: transform 160ms var(--ease-out); }
 .viewer-controls button:active, .viewer-close:active { transform: scale(0.96); }
 .viewer-close { top: calc(12px + env(safe-area-inset-top, 0px)); right: calc(var(--gutter) - 12px); }
+/* Opposite Close: where this photograph belongs, one step away. */
+.viewer-project { position: fixed; top: calc(12px + env(safe-area-inset-top, 0px)); left: calc(var(--gutter) - 12px); padding: 10px 12px; font-size: var(--t-s); text-decoration: underline; text-decoration-color: var(--lead); text-underline-offset: 0.25em; transition: text-decoration-color 160ms ease, transform 160ms var(--ease-out); }
+.viewer-project:active { transform: scale(0.97); }
+@media (hover: hover) and (pointer: fine) { .viewer-project:hover { text-decoration-color: var(--bone); } }
 @media (max-width: 760px) { .viewer-caption { bottom: calc(64px + env(safe-area-inset-bottom, 0px)); left: 16px; } .viewer-controls { left: 4px; right: 4px; bottom: calc(12px + env(safe-area-inset-bottom, 0px)); justify-content: space-between; } }
 
 /* ---------- Opening contact sheet ---------- */

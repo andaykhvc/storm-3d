@@ -9,12 +9,12 @@ export function home() {
   return `<h1 class="sr-only">Storm Nijhuis, fashion designer, stylist and creative director</h1>
   <section class="table" aria-label="Every photograph of the work">
     <div class="table-stage" data-table aria-hidden="true"></div>
-    <p class="table-intro">Fashion designer, stylist and creative director in Amsterdam. Drag to look through every photograph of the work, and open one to see its project.</p>
+    <p class="table-intro">Fashion designer, stylist and creative director in Amsterdam. Drag to look through every photograph of the work, and open one to see it full size.</p>
     <p class="table-caption" aria-hidden="true"></p>
-    <div class="table-filter" role="group" aria-label="Show photographs from">
-      <button type="button" data-filter="all" aria-pressed="true">All <sup>${archive.length}</sup></button>
-      ${projects.map((project) => `<button type="button" data-filter="${project.slug}" aria-pressed="false">${project.slug === 'film' ? 'Film' : project.title} <sup>${project.photos.length}</sup></button>`).join('')}
-    </div>
+    <nav class="table-filter" aria-label="Projects">
+      <span class="table-all" aria-current="page">All <sup>${archive.length}</sup></span>
+      ${projects.map((project) => `<a href="${project.href}">${project.short} <sup>${project.photos.length}</sup></a>`).join('')}
+    </nav>
     <div class="table-views" role="group" aria-label="View">
       <button type="button" data-view-mode="table" aria-pressed="true">Table</button>
       <button type="button" data-view-mode="index" aria-pressed="false">Index</button>

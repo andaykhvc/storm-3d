@@ -4,7 +4,7 @@
 // - Drag sideways to browse: the neighbour travels alongside, and momentum decides whether you land.
 // - Pull down to close: the photograph shrinks a little and the page shows through as you pull.
 // - Keyboard actions are instant. Reduced motion swaps springs for immediate changes.
-import { assets } from '../content/data.js';
+import { assets, projectOf } from '../content/data.js';
 import { describe, label } from '../views/kit.js';
 import { createSpring, project, rubberband } from './spring.js';
 
@@ -40,13 +40,22 @@ export function bindViewer(root, { reducedMotion, onToggle = () => {} }) {
   const image = dialog.querySelector('.viewer-image');
   const caption = dialog.querySelector('.viewer-caption');
   const count = dialog.querySelector('.viewer-count');
-  const chrome = [...dialog.querySelectorAll('.viewer-caption, .viewer-controls, .viewer-close')];
+  const projectLink = dialog.querySelector('.viewer-project');
+  const chrome = [...dialog.querySelectorAll('.viewer-caption, .viewer-controls, .viewer-close, .viewer-project')];
   const motion = () => !reducedMotion();
   let set = [];
   let index = 0;
   let trigger = null;
   let box = null;
   let drag = null;
+  // Where the open photograph lives outside the viewer. Pages use their thumbnails; the light table
+  // configures its own (see configure()).
+  const hooks = {
+    locate: (id) => visibleThumbnail(id)?.getBoundingClientRect() ?? null,
+    onChange: () => {},
+    onClose: () => {},
+    project: false,
+  };
 
   // Pose of the photograph (offset and scale) and the veil behind it, each its own spring.
   const pose = { x: createSpring(0), y: createSpring(0), s: createSpring(1, 0.001) };
@@ -130,14 +139,17 @@ export function bindViewer(root, { reducedMotion, onToggle = () => {} }) {
       full.decode().catch(() => {}).then(() => { if (set[index] === id && dialog.open) image.src = asset.large.src; });
     } else image.src = asset.large.src;
     caption.textContent = label(id);
+    const project = hooks.project && projectOf.get(id);
+    projectLink.hidden = !project;
+    if (project) { projectLink.href = project.href; projectLink.textContent = project.cta; }
+    hooks.onChange(id);
     count.textContent = `${index + 1} of ${set.length}`;
     // Fetch only the next photograph ahead, never the whole set.
     if (set.length > 1) new Image().src = assets.get(set[(index + 1) % set.length]).large.src;
   }
 
-  // The pose that puts the viewer photograph exactly over a thumbnail.
-  function thumbnailPose(img) {
-    const from = img?.getBoundingClientRect();
+  // The pose that puts the viewer photograph exactly over a rectangle on screen (a thumbnail).
+  function thumbnailPose(from) {
     if (!from?.width || !box) return null;
     return { x: from.left + from.width / 2 - (box.x + box.w / 2), y: from.top + from.height / 2 - (box.y + box.h / 2), s: from.width / box.w };
   }
@@ -159,7 +171,7 @@ export function bindViewer(root, { reducedMotion, onToggle = () => {} }) {
     place(id, thumbnail?.currentSrc);
     if (!dialog.open) { dialog.showModal(); onToggle(true); }
     document.documentElement.classList.add('has-viewer');
-    const start = !instant && motion() && thumbnailPose(thumbnail);
+    const start = !instant && motion() && thumbnailPose(thumbnail?.getBoundingClientRect());
     if (!start) {
       // Keyboard, reduced motion, or arriving from the light table already in place.
       veil.set(instant || !motion() ? 1 : 0);
@@ -192,6 +204,7 @@ export function bindViewer(root, { reducedMotion, onToggle = () => {} }) {
     pose.y.set(0);
     pose.s.set(1);
     image.style.transform = '';
+    hooks.onClose(set[index]);
     const back = trigger?.isConnected ? trigger : visibleThumbnail(set[index])?.closest('.photo');
     back?.focus({ preventScroll: true });
   }
@@ -200,7 +213,7 @@ export function bindViewer(root, { reducedMotion, onToggle = () => {} }) {
   function close({ instant = false } = {}) {
     if (!dialog.open) return;
     if (instant || !motion()) return finish();
-    const end = thumbnailPose(visibleThumbnail(set[index]));
+    const end = thumbnailPose(hooks.locate(set[index]));
     if (end) {
       pose.x.to(end.x, { response: 0.3 });
       pose.y.to(end.y, { response: 0.3 });
@@ -312,6 +325,8 @@ export function bindViewer(root, { reducedMotion, onToggle = () => {} }) {
     open(button.dataset.view, button.dataset.set.split(','), { from: button, instant: event.detail === 0 });
   };
   const onControl = (event) => {
+    // Going to the project: close at once and let the site's router take the link.
+    if (event.target.closest('.viewer-project')) return finish();
     if (event.target.closest('.viewer-close')) return close({ instant: event.detail === 0 });
     const stepButton = event.target.closest('[data-step]');
     if (stepButton) return step(Number(stepButton.dataset.step), { animate: event.detail !== 0 });
@@ -335,6 +350,7 @@ export function bindViewer(root, { reducedMotion, onToggle = () => {} }) {
 
   return {
     open,
+    configure(options) { Object.assign(hooks, options); },
     dispose() {
       root.removeEventListener('click', onClick);
       dialog.removeEventListener('click', onControl);

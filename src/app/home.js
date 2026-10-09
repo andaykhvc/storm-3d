@@ -1,6 +1,6 @@
 // Homepage: the light table, its filters and the Table / Index switch.
 import { gsap } from 'gsap';
-import { archive, projects, projectOf } from '../content/data.js';
+import { archive, projectOf } from '../content/data.js';
 import { label } from '../views/kit.js';
 import { viewerRect } from './viewer.js';
 
@@ -14,10 +14,9 @@ function webgl2() {
   }
 }
 
-export function mountHome(app, { gate, reducedMotion, onOpen }) {
+export function mountHome(app, { gate, reducedMotion, viewer }) {
   const stage = app.querySelector('[data-table]');
   const caption = app.querySelector('.table-caption');
-  const filters = [...app.querySelectorAll('[data-filter]')];
   const modes = [...app.querySelectorAll('[data-view-mode]')];
   let table = null;
   let alive = true;
@@ -36,18 +35,15 @@ export function mountHome(app, { gate, reducedMotion, onOpen }) {
     const button = event.target.closest('[data-view-mode]');
     if (button) setMode(button.dataset.viewMode);
   };
-  const onFilter = (event) => {
-    const button = event.target.closest('[data-filter]');
-    if (!button || button.getAttribute('aria-pressed') === 'true') return;
-    filters.forEach((b) => b.setAttribute('aria-pressed', String(b === button)));
-    const project = projects.find((p) => p.slug === button.dataset.filter);
-    table?.show(project ? project.photos : archive);
-  };
   app.addEventListener('click', onMode);
-  app.addEventListener('click', onFilter);
 
   const onHover = (id, pointer) => {
-    if (!id || !pointer) { caption.classList.remove('is-on'); captionShown = false; return; }
+    if (!id || !pointer || root.classList.contains('has-viewer')) {
+      caption.classList.remove('is-on');
+      stage.classList.remove('is-pointing');
+      captionShown = false;
+      return;
+    }
     caption.textContent = label(id);
     // The first appearance lands in place; after that it follows.
     if (!captionShown) gsap.set(caption, { x: pointer.x + 18, y: pointer.y + 18 });
@@ -66,8 +62,21 @@ export function mountHome(app, { gate, reducedMotion, onOpen }) {
       table = mountTable(stage, {
         reducedMotion,
         viewerRect,
-        onHover: (id, pointer) => { onHover(id, pointer); if (!id) stage.classList.remove('is-pointing'); },
-        onOpen: (id) => onOpen(id, projectOf.get(id)),
+        onHover,
+        // The photograph has lifted into the viewer's frame: the viewer takes over in place, and its
+        // gap stays open on the table until it returns. Browsing moves the gap; closing fills it.
+        onOpen: (id) => {
+          const project = projectOf.get(id);
+          viewer.open(id, project.photos, { instant: true });
+          table.settle();
+          table.hold(id);
+        },
+      });
+      viewer.configure({
+        project: true,
+        locate: (id) => table.rectOf(id),
+        onChange: (id) => table.hold(id),
+        onClose: () => table.release(),
       });
       // Lay the table out now so photographs load behind the opening; reveal it as the sheet lifts.
       table.show(archive, { first: true, wait: gate });
@@ -82,7 +91,6 @@ export function mountHome(app, { gate, reducedMotion, onOpen }) {
   return () => {
     alive = false;
     app.removeEventListener('click', onMode);
-    app.removeEventListener('click', onFilter);
     root.classList.remove('view-index');
     table?.dispose();
   };

@@ -43,13 +43,13 @@ export const film = {
 // The work, in the order the site presents it. `photos` is what each project contributes to the table.
 export const projects = [
   {
-    slug: 'hellion', href: '/hellion/', title: 'Hellion', kind: 'Collection', year: '2026', cover: 'editorial-v1-17',
+    slug: 'hellion', href: '/hellion/', title: 'Hellion', short: 'Hellion', cta: 'See the Hellion collection', kind: 'Collection', year: '2026', cover: 'editorial-v1-17',
     photos: [...looks.flatMap((look) => look.images), ...editorial, ...presentation],
   },
-  { slug: 'anima-obscura', href: '/anima-obscura/', title: 'Anima Obscura', kind: 'Fashion editorial with Denise Bakker', cover: 'anima-08', photos: anima },
-  { slug: 'styling', href: '/styling/', title: 'Styling', kind: 'Assisting Annet Veerbeek', cover: 'styling-9337', photos: styling },
-  { slug: 'film', href: '/film/', title: 'Hellion, the film', kind: 'A short fashion film, upcoming', cover: 'film-08', photos: film.stills },
-  { slug: 'studio', href: '/about/', title: 'Studio', kind: 'Storm at work', cover: 'about-02', photos: studio },
+  { slug: 'anima-obscura', href: '/anima-obscura/', title: 'Anima Obscura', short: 'Anima Obscura', cta: 'See Anima Obscura', kind: 'Fashion editorial with Denise Bakker', cover: 'anima-08', photos: anima },
+  { slug: 'styling', href: '/styling/', title: 'Styling', short: 'Styling', cta: 'See the styling work', kind: 'Assisting Annet Veerbeek', cover: 'styling-9337', photos: styling },
+  { slug: 'film', href: '/film/', title: 'Hellion, the film', short: 'Film', cta: 'See the film', kind: 'A short fashion film, upcoming', cover: 'film-08', photos: film.stills },
+  { slug: 'studio', href: '/about/', title: 'Studio', short: 'Studio', cta: 'Meet Storm', kind: 'Storm at work', cover: 'about-02', photos: studio },
 ];
 export const projectOf = new Map(projects.flatMap((project) => project.photos.map((id) => [id, project])));
 // Every photograph the public site shows, once.

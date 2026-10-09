@@ -37,6 +37,7 @@ function footer(path) {
 
 const viewer = `<dialog class="viewer" aria-label="Photograph viewer">
   <button type="button" class="viewer-close" autofocus>Close</button>
+  <a class="viewer-project" href="/" hidden></a>
   <div class="viewer-stage"><img class="viewer-image" alt="" draggable="false" /></div>
   <p class="viewer-caption" aria-live="polite"></p>
   <div class="viewer-controls">
@@ -50,7 +51,7 @@ export function renderPage(rawPath) {
   const path = normalizePath(rawPath);
   const page = pages[path] || notFound;
   const isHome = path === '/';
-  return `${header(path)}<main id="main" data-route="${path}" tabindex="-1">${page()}</main>${isHome ? '' : footer(path)}${isHome ? '' : viewer}`;
+  return `${header(path)}<main id="main" data-route="${path}" tabindex="-1">${page()}</main>${isHome ? '' : footer(path)}${viewer}`;
 }
 
 export function pageMeta(rawPath) {
