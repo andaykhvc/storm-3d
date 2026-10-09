@@ -3,8 +3,8 @@
 // like a curtain onto the page. Plays on every full load; any input skips it; never with reduced motion.
 import { assets, looks, VIEWS, archive } from '../content/data.js';
 
-// Looks 01, 03, 05, 07, ending face-on on the white-horned look 06.
-const SEQUENCE = ['01', '03', '05', '07', '06'];
+// Five of the seven looks turn, in a different order each time.
+const LOOKS_SHOWN = 5;
 const FRAME_MS = 75;
 const HOLD_MS = 380;
 // Never keep the page waiting on slow photographs for longer than this.
@@ -19,7 +19,11 @@ export function playIntro() {
     return Promise.resolve();
   }
 
-  const frames = SEQUENCE.flatMap((number) => looks.find((look) => look.number === number).images.map((id, view) => ({ id, number, view })));
+  // The look it comes to rest on changes every second, so consecutive visits end on a different
+  // photograph without the site storing anything; the others turn in random order before it.
+  const last = looks[Math.floor(Date.now() / 1000) % looks.length];
+  const others = looks.filter((look) => look !== last).sort(() => Math.random() - 0.5).slice(0, LOOKS_SHOWN - 1);
+  const frames = [...others, last].flatMap((look) => look.images.map((id, view) => ({ id, number: look.number, view })));
   frames.push(frames.at(-4)); // the last look completes its turn and rests facing forward
   sheet.innerHTML = `<div class="intro-frame">${frames.map(({ id }) => {
     const { small } = assets.get(id);

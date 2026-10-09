@@ -230,12 +230,13 @@ main:not([data-route='/']) { padding-top: var(--bar); }
 .viewer { position: fixed; inset: 0; width: 100%; height: 100%; max-width: none; max-height: none; margin: 0; padding: 0; border: 0; background: var(--night); color: var(--bone); overflow: hidden; }
 .viewer::backdrop { background: transparent; }
 .viewer-probe { position: fixed; inset: var(--viewer-top) var(--viewer-side) var(--viewer-bottom); visibility: hidden; pointer-events: none; }
-.viewer-stage { position: absolute; inset: 0; }
+.viewer-stage { position: absolute; inset: 0; z-index: 0; }
 /* Springs drive the transform (src/app/viewer.js); the finger drives it while dragging. */
 .viewer-image { position: fixed; transform-origin: center; max-width: none; user-select: none; -webkit-user-select: none; -webkit-user-drag: none; -webkit-touch-callout: none; touch-action: pinch-zoom; cursor: grab; will-change: transform; }
 .viewer-image:active { cursor: grabbing; }
 .viewer-swap { pointer-events: none; }
-.viewer-caption, .viewer-controls, .viewer-close { position: fixed; font-size: var(--t-s); }
+/* Controls sit above the stage, which fills the dialog and closes it when the backdrop is clicked. */
+.viewer-caption, .viewer-controls, .viewer-close, .viewer-project { position: fixed; z-index: 2; font-size: var(--t-s); }
 .viewer-caption { left: var(--gutter); bottom: calc(32px + env(safe-area-inset-bottom, 0px)); color: var(--ash); max-width: 40ch; }
 .viewer-controls { right: var(--gutter); bottom: calc(22px + env(safe-area-inset-bottom, 0px)); display: flex; align-items: center; gap: 4px; }
 .viewer-count { color: var(--ash); font-variant-numeric: tabular-nums; padding: 0 12px; }
