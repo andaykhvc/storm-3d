@@ -59,6 +59,9 @@ main:focus { outline: none; }
 
 /* ---------- Bar ---------- */
 .bar { position: fixed; z-index: 20; inset: 0 0 auto; height: var(--bar); padding: env(safe-area-inset-top, 0px) var(--gutter) 0; display: flex; align-items: center; justify-content: space-between; gap: 24px; background: var(--night); border-bottom: 1px solid var(--lead); }
+/* Scrolling down tucks the bar away; scrolling up brings it back. */
+.bar { transition: transform 220ms var(--ease-out); }
+.bar.is-hidden { transform: translateY(-100%); }
 .is-home .bar { background: none; border-bottom-color: transparent; pointer-events: none; }
 .is-home .bar > * { pointer-events: auto; }
 .bar-mark { font-size: 1.85rem; line-height: 1; white-space: nowrap; }
@@ -124,7 +127,13 @@ main:not([data-route='/']) { padding-top: var(--bar); }
 .opening-line { max-width: 40ch; color: var(--ash); font-size: var(--t-l); line-height: 1.45; }
 
 .photo { display: block; width: 100%; cursor: zoom-in; }
-.photo img { transition: transform 160ms var(--ease-out); }
+.photo img { transition: opacity 400ms ease, transform 160ms var(--ease-out); }
+/* Photographs fade in once loaded instead of popping in. */
+.photo img.is-loading { opacity: 0; }
+.turntable-frame img { transition: none; }
+/* Frames below the fold rise into place as they arrive, a beat apart. */
+[data-reveal] { transition: opacity 400ms ease, transform 500ms var(--ease-out); transition-delay: var(--delay, 0ms); }
+[data-reveal='hidden'] { opacity: 0; transform: translateY(12px); }
 .photo:active img { transform: scale(0.985); }
 .photo img { width: 100%; background: var(--soot); }
 .cover { padding: 0 var(--gutter); }
@@ -222,7 +231,10 @@ main:not([data-route='/']) { padding-top: var(--bar); }
 .viewer::backdrop { background: transparent; }
 .viewer-probe { position: fixed; inset: var(--viewer-top) var(--viewer-side) var(--viewer-bottom); visibility: hidden; pointer-events: none; }
 .viewer-stage { position: absolute; inset: 0; }
-.viewer-image { position: fixed; transform-origin: 0 0; max-width: none; user-select: none; -webkit-user-select: none; touch-action: pan-y; will-change: transform; }
+/* Springs drive the transform (src/app/viewer.js); the finger drives it while dragging. */
+.viewer-image { position: fixed; transform-origin: center; max-width: none; user-select: none; -webkit-user-select: none; -webkit-user-drag: none; -webkit-touch-callout: none; touch-action: pinch-zoom; cursor: grab; will-change: transform; }
+.viewer-image:active { cursor: grabbing; }
+.viewer-swap { pointer-events: none; }
 .viewer-caption, .viewer-controls, .viewer-close { position: fixed; font-size: var(--t-s); }
 .viewer-caption { left: var(--gutter); bottom: calc(32px + env(safe-area-inset-bottom, 0px)); color: var(--ash); max-width: 40ch; }
 .viewer-controls { right: var(--gutter); bottom: calc(22px + env(safe-area-inset-bottom, 0px)); display: flex; align-items: center; gap: 4px; }

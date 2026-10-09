@@ -126,12 +126,67 @@ function nave(app) {
   return () => { alive = false; dispose(); };
 }
 
+// Frames below the fold rise into place as they scroll in; what is on screen at load stays put.
+function reveals(app) {
+  const observer = new IntersectionObserver((entries) => {
+    let order = 0;
+    for (const entry of entries) {
+      if (!entry.isIntersecting) continue;
+      // Frames arriving together cascade, 70ms apart.
+      entry.target.style.setProperty('--delay', `${Math.min(order++, 5) * 70}ms`);
+      entry.target.dataset.reveal = 'shown';
+      observer.unobserve(entry.target);
+    }
+  }, { rootMargin: '0px 0px -6% 0px' });
+  for (const target of app.querySelectorAll('.sheet .frame, .look, .cover, .chapter-title, .about-portrait, .next')) {
+    if (target.getBoundingClientRect().top < innerHeight) continue;
+    target.dataset.reveal = 'hidden';
+    observer.observe(target);
+  }
+  return () => observer.disconnect();
+}
+
+// Photographs fade in when their file arrives instead of popping in.
+function fadeInPhotos(app) {
+  for (const img of app.querySelectorAll('.photo img')) {
+    if (img.complete) continue;
+    img.classList.add('is-loading');
+    const done = () => img.classList.remove('is-loading');
+    img.addEventListener('load', done, { once: true });
+    img.addEventListener('error', done, { once: true });
+  }
+}
+
+// The bar tucks away while reading down the page and returns as soon as you scroll up.
+function autoHideBar(app) {
+  const bar = app.querySelector('.bar');
+  if (!bar) return () => {};
+  let last = scrollY;
+  const onScroll = () => {
+    const y = scrollY;
+    const delta = y - last;
+    if (Math.abs(delta) < 6) return;
+    if (!document.documentElement.classList.contains('has-viewer')) bar.classList.toggle('is-hidden', delta > 0 && y > 160);
+    last = y;
+  };
+  const onFocus = () => bar.classList.remove('is-hidden');
+  addEventListener('scroll', onScroll, { passive: true });
+  bar.addEventListener('focusin', onFocus);
+  return () => {
+    removeEventListener('scroll', onScroll);
+    bar.removeEventListener('focusin', onFocus);
+  };
+}
+
 export function mountPage(app, path, { ready, inkDuration }) {
   const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const cleanups = [];
   const scroll = reduced ? null : smoothScroll();
   if (!reduced) {
     cleanups.push(titleInk(app, ready, inkDuration));
+    cleanups.push(reveals(app));
+    cleanups.push(autoHideBar(app));
+    fadeInPhotos(app);
     const context = gsap.context(() => {
       turntable(app);
       cleanups.push(strip(app) || (() => {}));
