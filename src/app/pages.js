@@ -26,7 +26,7 @@ export function smoothScroll() {
 }
 
 // The title inks in once `ready` resolves (the opening sheet or the page wash has lifted).
-export function titleInk(app, ready) {
+export function titleInk(app, ready, duration = 1.1) {
   const title = app.querySelector('.opening-title');
   if (!title) return () => {};
   let cancel = () => {};
@@ -35,7 +35,7 @@ export function titleInk(app, ready) {
   const image = title.querySelector('img');
   Promise.all([ready, document.fonts.load('400 100px KochSchrift'), image?.decode().catch(() => {})]).then(() => {
     if (!alive) return;
-    cancel = inkTitle(title);
+    cancel = inkTitle(title, { duration });
     if (title.style.opacity === '0' && !app.querySelector('.ink-title')) title.style.opacity = '';
   });
   return () => {
@@ -126,12 +126,12 @@ function nave(app) {
   return () => { alive = false; dispose(); };
 }
 
-export function mountPage(app, path, { ready }) {
+export function mountPage(app, path, { ready, inkDuration }) {
   const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const cleanups = [];
   const scroll = reduced ? null : smoothScroll();
   if (!reduced) {
-    cleanups.push(titleInk(app, ready));
+    cleanups.push(titleInk(app, ready, inkDuration));
     const context = gsap.context(() => {
       turntable(app);
       cleanups.push(strip(app) || (() => {}));

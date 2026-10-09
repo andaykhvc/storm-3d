@@ -27,10 +27,10 @@ function setMeta(path) {
 }
 
 // `ready` resolves when the page is uncovered (opening sheet or ink wash lifting): entrances wait for it.
-function mount(path, { ready = Promise.resolve(), then } = {}) {
+function mount(path, { ready = Promise.resolve(), then, inkDuration = 1.1 } = {}) {
   const isHome = path === '/';
   root.classList.toggle('is-home', isHome);
-  const page = isHome ? null : mountPage(app, path, { ready });
+  const page = isHome ? null : mountPage(app, path, { ready, inkDuration });
   const viewer = bindViewer(app, { reducedMotion, onToggle: (open) => (open ? page?.lenis?.stop() : page?.lenis?.start()) });
   const unmountHome = isHome
     ? mountHome(app, {
@@ -48,7 +48,7 @@ function mount(path, { ready = Promise.resolve(), then } = {}) {
   then?.(viewer);
 }
 
-async function navigate(href, { push = true, then } = {}) {
+async function navigate(href, { push = true, then, instant = false } = {}) {
   if (busy) return;
   const url = new URL(href, location.href);
   const path = normalizePath(url.pathname);
@@ -66,8 +66,12 @@ async function navigate(href, { push = true, then } = {}) {
   };
   busy = true;
   try {
-    if (then || !wash) {
-      // From the light table the photograph itself is the transition; elsewhere a cross-fade.
+    if (then || instant) {
+      // From the light table the lifted photograph is already where the viewer shows it: swap in place.
+      // Back and forward are too frequent to animate.
+      update();
+      uncover();
+    } else if (!wash) {
       if (document.startViewTransition && !reducedMotion()) await document.startViewTransition(update).finished.catch(() => {});
       else update();
       uncover();
@@ -95,11 +99,11 @@ document.addEventListener('click', (event) => {
   if (path === normalizePath(location.pathname)) return;
   navigate(url.href);
 });
-addEventListener('popstate', () => navigate(location.href, { push: false }));
+addEventListener('popstate', () => navigate(location.href, { push: false, instant: true }));
 // iOS Safari applies :active only once a touch listener exists.
 document.addEventListener('touchstart', () => {}, { passive: true });
 
 const path = normalizePath(location.pathname);
 if (app.querySelector('main')?.dataset.route !== path) app.innerHTML = renderPage(path);
 setMeta(path);
-mount(path, { ready: intro });
+mount(path, { ready: intro, inkDuration: 1.6 });

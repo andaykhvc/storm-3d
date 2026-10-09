@@ -149,6 +149,7 @@ export function mountTable(stage, { onHover, onOpen, viewerRect, reducedMotion }
   const fx = { zoom: 1, lens: 0, alpha: 0 };
   let speed = 0;
   let drag = null;
+  let keyed = false; // arrow keys: follow quickly, keyboard moves should feel immediate
 
   const instances = [];
   function collect() {
@@ -207,7 +208,8 @@ export function mountTable(stage, { onHover, onOpen, viewerRect, reducedMotion }
     }
     evict();
 
-    const ease = 1 - Math.exp(-(drag ? 30 : 9) * (1 / 60));
+    const ease = 1 - Math.exp(-(drag || keyed ? 30 : 9) * (1 / 60));
+    if (keyed && Math.hypot(target.x - pos.x, target.y - pos.y) < 0.5) keyed = false;
     pos.x += (target.x - pos.x) * ease;
     pos.y += (target.y - pos.y) * ease;
     speed = Math.hypot(pos.x - last.x, pos.y - last.y);
@@ -268,6 +270,7 @@ export function mountTable(stage, { onHover, onOpen, viewerRect, reducedMotion }
   // ---- Input.
   const onDown = (event) => {
     if (opening || event.button > 0) return;
+    keyed = false;
     try { canvas.setPointerCapture(event.pointerId); } catch { /* pointer already gone */ }
     drag = { id: event.pointerId, sx: event.clientX, sy: event.clientY, x: event.clientX, y: event.clientY, t: performance.now(), vx: 0, vy: 0, moved: 0 };
     if (!reducedMotion()) gsap.to(fx, { zoom: 0.94, duration: 0.5, ease: 'expo.out', overwrite: 'auto' });
@@ -295,7 +298,7 @@ export function mountTable(stage, { onHover, onOpen, viewerRect, reducedMotion }
     const { moved, vx, vy } = drag;
     drag = null;
     stage.classList.remove('is-dragging');
-    gsap.to(fx, { zoom: 1, duration: 0.7, ease: 'expo.out', overwrite: 'auto' });
+    gsap.to(fx, { zoom: 1, duration: 0.45, ease: 'expo.out', overwrite: 'auto' });
     if (moved < 6) {
       const tile = hit(event.clientX, event.clientY);
       if (tile) open(tile);
@@ -320,6 +323,7 @@ export function mountTable(stage, { onHover, onOpen, viewerRect, reducedMotion }
     const step = { ArrowLeft: [1, 0], ArrowRight: [-1, 0], ArrowUp: [0, 1], ArrowDown: [0, -1] }[event.key];
     if (!step) return;
     event.preventDefault();
+    keyed = true;
     target.x += step[0] * (tileW + gap);
     target.y += step[1] * (tileW + gap);
   };
@@ -384,8 +388,9 @@ export function mountTable(stage, { onHover, onOpen, viewerRect, reducedMotion }
     // Shows a set of photographs. `wait` holds the entrance (the table still loads underneath).
     show(list, { first = false, wait = null } = {}) {
       const enter = () => {
-        gsap.fromTo(fx, { alpha: 0 }, { alpha: 1, duration: reducedMotion() ? 0.2 : 1.1, ease: 'power2.out' });
-        if (!reducedMotion()) gsap.fromTo(fx, { zoom: first ? 1.22 : 1.06 }, { zoom: 1, duration: first ? 1.8 : 0.9, ease: 'expo.out' });
+        // The first entrance is the showpiece; switching filters is a control and stays quick.
+        gsap.fromTo(fx, { alpha: 0 }, { alpha: 1, duration: reducedMotion() ? 0.2 : first ? 1.1 : 0.45, ease: 'power2.out' });
+        if (!reducedMotion()) gsap.fromTo(fx, { zoom: first ? 1.22 : 1.04 }, { zoom: 1, duration: first ? 1.8 : 0.55, ease: 'expo.out' });
       };
       const swap = () => {
         layout(shuffle(list, list.length));

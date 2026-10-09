@@ -37,6 +37,14 @@ export function bindViewer(root, { reducedMotion, onToggle = () => {} }) {
   let index = 0;
   let trigger = null;
   let swipe = null;
+  const chrome = [...dialog.querySelectorAll('.viewer-caption, .viewer-controls, .viewer-close')];
+  // Veil: the dialog's backdrop colour and its controls fade together, each animated directly.
+  const veil = { v: 1 };
+  const paint = () => {
+    dialog.style.backgroundColor = `rgb(8 8 8 / ${veil.v})`;
+    chrome.forEach((el) => { el.style.opacity = veil.v; });
+  };
+  const fadeVeil = (from, to, vars) => gsap.fromTo(veil, { v: from }, { v: to, onUpdate: paint, ...vars });
 
   function place(id) {
     const asset = assets.get(id);
@@ -58,14 +66,14 @@ export function bindViewer(root, { reducedMotion, onToggle = () => {} }) {
     const box = place(id);
     if (!dialog.open) { dialog.showModal(); onToggle(true); }
     document.documentElement.classList.add('has-viewer');
-    gsap.killTweensOf([image, dialog]);
+    gsap.killTweensOf([image, veil]);
     const rect = from?.querySelector('img')?.getBoundingClientRect();
     if (instant || reducedMotion() || !rect) {
       gsap.set(image, { clearProps: 'transform' });
-      gsap.fromTo(dialog, { '--veil': instant ? 1 : 0 }, { '--veil': 1, duration: 0.2, ease: 'power1.out' });
+      fadeVeil(instant ? 1 : 0, 1, { duration: 0.2, ease: 'power1.out' });
       return;
     }
-    gsap.fromTo(dialog, { '--veil': 0 }, { '--veil': 1, duration: 0.4, ease: 'power2.out' });
+    fadeVeil(0, 1, { duration: 0.4, ease: 'power2.out' });
     gsap.fromTo(image, { x: rect.left - box.x, y: rect.top - box.y, scaleX: rect.width / box.w, scaleY: rect.height / box.h }, { x: 0, y: 0, scaleX: 1, scaleY: 1, duration: 0.5, ease: 'expo.out' });
   }
 
@@ -95,11 +103,11 @@ export function bindViewer(root, { reducedMotion, onToggle = () => {} }) {
     };
     if (instant) return finish();
     if (reducedMotion() || !visible) {
-      gsap.to(dialog, { '--veil': 0, duration: 0.18, ease: 'power1.out', onComplete: finish });
+      fadeVeil(veil.v, 0, { duration: 0.18, ease: 'power1.out', onComplete: finish });
       return;
     }
     const box = fit(id);
-    gsap.to(dialog, { '--veil': 0, duration: 0.28, ease: 'power2.out' });
+    fadeVeil(veil.v, 0, { duration: 0.28, ease: 'power2.out' });
     gsap.to(image, { x: rect.left - box.x, y: rect.top - box.y, scaleX: rect.width / box.w, scaleY: rect.height / box.h, duration: 0.34, ease: 'expo.inOut', onComplete: finish });
   }
 
@@ -143,7 +151,7 @@ export function bindViewer(root, { reducedMotion, onToggle = () => {} }) {
       dialog.removeEventListener('keydown', onKey);
       image.removeEventListener('pointerdown', onDown);
       image.removeEventListener('pointerup', onUp);
-      gsap.killTweensOf([image, dialog]);
+      gsap.killTweensOf([image, veil]);
       if (dialog.open) dialog.close();
       document.documentElement.classList.remove('has-viewer');
     },
