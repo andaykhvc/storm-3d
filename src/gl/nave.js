@@ -244,7 +244,7 @@ function load(src) {
 export async function mountNave(track, stage, { altar, aisle, onCaption }) {
   const textures = await Promise.all([...aisle.map((id) => load(assets.get(id).medium.src)), load(assets.get(altar).large.src)]);
   const renderer = new WebGLRenderer({ antialias: true, powerPreference: 'high-performance' });
-  renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+  renderer.setPixelRatio(Math.min(devicePixelRatio, innerWidth * devicePixelRatio > 3200 ? 1.5 : 2));
   renderer.setClearColor(0x080808, 1);
   const canvas = renderer.domElement;
   canvas.className = 'nave-canvas';

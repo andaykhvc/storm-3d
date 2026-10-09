@@ -54,7 +54,8 @@ const MAX_TEXTURES = 110;
 const blank = new Texture();
 
 export function mountTable(stage, { onHover, onOpen, viewerRect, reducedMotion }) {
-  const dpr = Math.min(devicePixelRatio, 2);
+  // Very large screens already have plenty of pixels; 1.5x keeps photographs sharp at lower GPU cost.
+  const dpr = Math.min(devicePixelRatio, innerWidth * devicePixelRatio > 3200 ? 1.5 : 2);
   const renderer = new WebGLRenderer({ antialias: true, powerPreference: 'high-performance' });
   renderer.setPixelRatio(dpr);
   renderer.setClearColor(0x080808, 1);
@@ -84,6 +85,8 @@ export function mountTable(stage, { onHover, onOpen, viewerRect, reducedMotion }
   function pump() {
     while (loading < 6 && queue.length) {
       const id = queue.shift();
+      // A fast fling queues photographs it has already passed; fetch only what is still on screen.
+      if (!onScreen.has(id)) { pending.delete(id); continue; }
       loading += 1;
       loader.load(assets.get(id)[size].src, (bitmap) => {
         loading -= 1;
@@ -152,8 +155,10 @@ export function mountTable(stage, { onHover, onOpen, viewerRect, reducedMotion }
   let keyed = false; // arrow keys: follow quickly, keyboard moves should feel immediate
 
   const instances = [];
+  const onScreen = new Set();
   function collect() {
     instances.length = 0;
+    onScreen.clear();
     const vw = view.x;
     const vh = view.y;
     const margin = 80;
@@ -166,6 +171,7 @@ export function mountTable(stage, { onHover, onOpen, viewerRect, reducedMotion }
             const top = y + item.y;
             if (top + item.h < -margin || top > vh + margin) continue;
             instances.push({ id: item.id, x, y: top, w: tileW, h: item.h });
+            onScreen.add(item.id);
           }
         }
       }

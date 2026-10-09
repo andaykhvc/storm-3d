@@ -205,8 +205,10 @@ export function bindViewer(root, { reducedMotion, onToggle = () => {} }) {
     pose.s.set(1);
     image.style.transform = '';
     hooks.onClose(set[index]);
-    const back = trigger?.isConnected ? trigger : visibleThumbnail(set[index])?.closest('.photo');
-    back?.focus({ preventScroll: true });
+    // Return focus to the photograph that was opened, unless it is a decorative twin (turntable, strip).
+    const focusable = (el) => el?.isConnected && el.tabIndex >= 0 && !el.closest('[aria-hidden="true"]');
+    const back = focusable(trigger) ? trigger : visibleThumbnail(set[index])?.closest('.photo');
+    if (focusable(back)) back.focus({ preventScroll: true });
   }
 
   // Pointer closes shrink back into the thumbnail when it is on screen; keyboard closes are instant.
@@ -339,6 +341,9 @@ export function bindViewer(root, { reducedMotion, onToggle = () => {} }) {
   // Escape closes straight away, through our own clean-up rather than the browser's.
   const onCancel = (event) => { event.preventDefault(); close({ instant: true }); };
 
+  // Rotating a phone or resizing the window re-fits the open photograph.
+  const onResize = () => { if (dialog.open && !drag) { place(set[index]); render(); } };
+  addEventListener('resize', onResize);
   root.addEventListener('click', onClick);
   dialog.addEventListener('click', onControl);
   dialog.addEventListener('keydown', onKey);
@@ -352,6 +357,7 @@ export function bindViewer(root, { reducedMotion, onToggle = () => {} }) {
     open,
     configure(options) { Object.assign(hooks, options); },
     dispose() {
+      removeEventListener('resize', onResize);
       root.removeEventListener('click', onClick);
       dialog.removeEventListener('click', onControl);
       dialog.removeEventListener('keydown', onKey);

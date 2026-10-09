@@ -4,7 +4,6 @@ import { normalizePath } from '../views/kit.js';
 import { playIntro } from './intro.js';
 import { bindViewer } from './viewer.js';
 import { mountHome } from './home.js';
-import { mountPage } from './pages.js';
 import { createWash } from '../gl/wash.js';
 
 const app = document.querySelector('#app');
@@ -17,6 +16,9 @@ const intro = playIntro();
 const wash = reducedMotion() ? null : createWash();
 let teardown = () => {};
 let busy = false;
+// Smooth scrolling and the page chapters (Lenis, ScrollTrigger) are not needed on the light table.
+let pages = null;
+const loadPages = () => import('./pages.js').then((module) => (pages = module));
 
 function setMeta(path) {
   const { title, description } = pageMeta(path);
@@ -30,10 +32,17 @@ function setMeta(path) {
 function mount(path, { ready = Promise.resolve(), inkDuration = 1.1 } = {}) {
   const isHome = path === '/';
   root.classList.toggle('is-home', isHome);
-  const page = isHome ? null : mountPage(app, path, { ready, inkDuration });
+  let page = null;
+  let alive = true;
+  const start = () => { if (alive) page = pages.mountPage(app, path, { ready, inkDuration }); };
+  if (!isHome) {
+    if (pages) start();
+    else loadPages().then(start);
+  }
   const viewer = bindViewer(app, { reducedMotion, onToggle: (open) => (open ? page?.lenis?.stop() : page?.lenis?.start()) });
   const unmountHome = isHome ? mountHome(app, { gate: ready, reducedMotion, viewer }) : () => {};
   teardown = () => {
+    alive = false;
     unmountHome();
     viewer.dispose();
     page?.dispose();
@@ -67,7 +76,8 @@ async function navigate(href, { push = true, instant = false } = {}) {
       else update();
       uncover();
     } else {
-      await wash.cover();
+      // Fetch the page code while the ink covers the screen, so the new page mounts in one go.
+      await Promise.all([wash.cover(), path === '/' || pages ? null : loadPages().catch(() => {})]);
       update();
       uncover();
       await wash.reveal();
@@ -98,3 +108,5 @@ const path = normalizePath(location.pathname);
 if (app.querySelector('main')?.dataset.route !== path) app.innerHTML = renderPage(path);
 setMeta(path);
 mount(path, { ready: intro, inkDuration: 1.6 });
+// On the homepage, fetch the page code once the browser is idle, ready for the first link.
+if (path === '/') (window.requestIdleCallback || setTimeout)(() => loadPages().catch(() => {}), { timeout: 4000 });
