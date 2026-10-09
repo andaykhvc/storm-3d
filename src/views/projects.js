@@ -10,6 +10,28 @@ function sheet(ids, { set = ids, start = 1, sizes } = {}) {
   return `${portrait.length ? `<div class="sheet">${portrait.map((id) => frame(id, ids.indexOf(id))).join('')}</div>` : ''}${landscape.length ? `<div class="sheet sheet--wide">${landscape.map((id) => frame(id, ids.indexOf(id))).join('')}</div>` : ''}`;
 }
 
+// The lookbook as one turning figure: scrolling steps through every look's four views.
+// Decorative twin of the looks grid below it, which stays for keyboards, screen readers and reduced motion.
+function turntable(ids) {
+  return `<div class="turntable" aria-hidden="true"><div class="turntable-stage">
+    <p class="turntable-number">${looks[0].number}</p>
+    <button class="turntable-frame photo" type="button" tabindex="-1" data-view="${ids[0]}" data-set="${ids.join(',')}">${ids.map((id) => {
+      const { medium } = assets.get(id);
+      return `<img src="${medium.src}" width="${medium.width}" height="${medium.height}" alt="" loading="lazy" decoding="async" />`;
+    }).join('')}</button>
+    <div class="turntable-side"><p class="turntable-caption">Look ${looks[0].number}, front</p><ol class="turntable-rail">${looks.map(() => '<li></li>').join('')}</ol></div>
+  </div></div>`;
+}
+
+// A run of photographs that slides sideways as you scroll down. Decorative: the sheet below has them all.
+const EDITORIAL_STRIP = ['editorial-v1-01', 'editorial-v2-07', 'editorial-v1-17', 'editorial-v2-19', 'editorial-v1-06', 'editorial-v2-28', 'editorial-v1-15', 'editorial-v2-26', 'editorial-v1-07', 'editorial-v2-29', 'editorial-v1-11'];
+function strip(ids, set) {
+  return `<div class="strip" aria-hidden="true"><div class="strip-stage"><div class="strip-row">${ids.map((id) => {
+    const { medium } = assets.get(id);
+    return `<button class="photo" type="button" tabindex="-1" data-view="${id}" data-set="${set.join(',')}"><img src="${medium.src}" width="${medium.width}" height="${medium.height}" alt="" loading="lazy" decoding="async" /></button>`;
+  }).join('')}</div></div></div>`;
+}
+
 const next = (href, title) => `<nav class="next" aria-label="Next project"><a href="${href}"><span>Next</span><span class="next-title">${title}</span></a></nav>`;
 
 export function hellion() {
@@ -30,6 +52,7 @@ export function hellion() {
     </section>
     <section class="chapter" aria-labelledby="looks-title">
       <h2 class="chapter-title" id="looks-title">Seven looks</h2>
+      ${turntable(lookbook)}
       <div class="looks">${looks.map((look) => `<div class="look">
         <h3 class="look-number"><span class="sr-only">Look </span>${look.number}</h3>
         <div class="look-views">${look.images.map((id, i) => `<figure class="frame">${photo(id, lookbook, { sizes: '(max-width: 760px) 50vw, 20vw' })}<figcaption>${VIEWS[i]}</figcaption></figure>`).join('')}</div>
@@ -37,6 +60,8 @@ export function hellion() {
     </section>
     <section class="chapter" aria-labelledby="editorial-title">
       <h2 class="chapter-title" id="editorial-title">Editorial</h2>
+      ${strip(EDITORIAL_STRIP, editorial)}
+      <h3 class="chapter-sub">Every frame, in order</h3>
       ${sheet(editorial, { sizes: '(max-width: 760px) 50vw, 24vw' })}
     </section>
     <section class="chapter" aria-labelledby="presentation-title">
@@ -99,7 +124,13 @@ export function filmPage() {
       <h1 class="opening-title gothic">${film.title}</h1>
       <p class="opening-line">${film.format}. ${film.status}: the full film will be shared after its public release.</p>
     </header>
-    <figure class="cover">${photo(first, film.stills, { eager: true, priority: true, sizes: '100vw' })}</figure>
+    <section class="nave" aria-label="A walk through Pieterskerk, past the stills to the altar">
+      <div class="nave-track"><div class="nave-stage">
+        <p class="nave-hint">Scroll to walk into Pieterskerk</p>
+        <p class="nave-caption" aria-hidden="true"></p>
+      </div></div>
+    </section>
+    <figure class="cover film-cover">${photo(first, film.stills, { eager: true, priority: true, sizes: '100vw' })}</figure>
     <section class="prologue" aria-label="About the film">
       <p class="statement">${film.logline}</p>
       <div class="prose">${film.synopsis.map((p) => `<p>${p}</p>`).join('')}</div>

@@ -18,6 +18,9 @@ pnpm build    # checks, bundle, pre-rendered pages in dist/
 - `src/views/`: HTML for every page, shared by the browser and the build (`scripts/build.mjs` pre-renders each route).
 - `src/app/`: the router, opening contact sheet, photograph viewer and homepage controls.
 - `src/gl/table.js`: the WebGL light table (three.js), loaded only on the homepage.
+- `src/gl/nave.js`: the film page's walk through Pieterskerk (three.js), loaded only there.
+- `src/gl/ink.js`, `src/gl/wash.js`: titles that bloom out of ink, and the ink that covers the screen between pages (plain WebGL2).
+- `src/app/pages.js`: smooth scrolling (Lenis with ScrollTrigger), the Hellion turntable and editorial strip, and statements that light up word by word.
 - `scripts/validate.mjs`: checks the photographs, links, headings and the no-filter, no-crop rule.
 
-Reduced motion switches off the opening and the table's motion; without WebGL or scripts the homepage shows the Index, a plain list of the projects.
+Every cinematic section has a complete static twin. Reduced motion switches off the opening, the ink, the turntable, the strip and the walk, and shows the plain pages; without WebGL or scripts the homepage shows the Index, a plain list of the projects. Old URLs (`/design/…`, `/creative-direction/`) redirect in `vercel.json`.

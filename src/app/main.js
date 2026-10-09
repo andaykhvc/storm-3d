@@ -1,17 +1,22 @@
 import '../styles/main.css';
-import Lenis from 'lenis';
 import { renderPage, pageMeta } from '../views/layout.js';
 import { normalizePath } from '../views/kit.js';
 import { playIntro } from './intro.js';
 import { bindViewer } from './viewer.js';
 import { mountHome } from './home.js';
+import { mountPage } from './pages.js';
+import { createWash } from '../gl/wash.js';
 
 const app = document.querySelector('#app');
 const root = document.documentElement;
 const motionQuery = matchMedia('(prefers-reduced-motion: reduce)');
 const reducedMotion = () => motionQuery.matches;
+// Cinematic sections (turntable, strip, the walk through Pieterskerk) only run with motion allowed.
+root.classList.toggle('cinema', !reducedMotion());
 const intro = playIntro();
+const wash = reducedMotion() ? null : createWash();
 let teardown = () => {};
+let busy = false;
 
 function setMeta(path) {
   const { title, description } = pageMeta(path);
@@ -21,15 +26,15 @@ function setMeta(path) {
   document.querySelector('meta[property="og:description"]')?.setAttribute('content', description);
 }
 
-function mount(path, { gate = Promise.resolve(), then } = {}) {
+// `ready` resolves when the page is uncovered (opening sheet or ink wash lifting): entrances wait for it.
+function mount(path, { ready = Promise.resolve(), then } = {}) {
   const isHome = path === '/';
   root.classList.toggle('is-home', isHome);
-  let lenis = null;
-  if (!isHome && !reducedMotion()) lenis = new Lenis({ autoRaf: true, lerp: 0.11 });
-  const viewer = bindViewer(app, { reducedMotion, onToggle: (open) => (open ? lenis?.stop() : lenis?.start()) });
+  const page = isHome ? null : mountPage(app, path, { ready });
+  const viewer = bindViewer(app, { reducedMotion, onToggle: (open) => (open ? page?.lenis?.stop() : page?.lenis?.start()) });
   const unmountHome = isHome
     ? mountHome(app, {
-      gate,
+      gate: ready,
       reducedMotion,
       // A photograph opened on the table: go to its project, already showing it full frame.
       onOpen: (id, project) => navigate(project.href, { then: (v) => v.open(id, project.photos, { instant: true }) }),
@@ -38,26 +43,43 @@ function mount(path, { gate = Promise.resolve(), then } = {}) {
   teardown = () => {
     unmountHome();
     viewer.dispose();
-    lenis?.destroy();
+    page?.dispose();
   };
   then?.(viewer);
 }
 
-function navigate(href, { push = true, then } = {}) {
+async function navigate(href, { push = true, then } = {}) {
+  if (busy) return;
   const url = new URL(href, location.href);
   const path = normalizePath(url.pathname);
   if (push) history.pushState(null, '', path + url.hash);
+  let uncover = () => {};
+  const ready = new Promise((resolve) => { uncover = resolve; });
   const update = () => {
     teardown();
     app.innerHTML = renderPage(path);
     setMeta(path);
     window.scrollTo(0, 0);
-    mount(path, { then });
+    mount(path, { ready, then });
     if (!then) app.querySelector('main')?.focus({ preventScroll: true });
     if (url.hash) document.getElementById(decodeURIComponent(url.hash.slice(1)))?.scrollIntoView();
   };
-  if (document.startViewTransition && !reducedMotion()) document.startViewTransition(update).ready.catch(() => {});
-  else update();
+  busy = true;
+  try {
+    if (then || !wash) {
+      // From the light table the photograph itself is the transition; elsewhere a cross-fade.
+      if (document.startViewTransition && !reducedMotion()) await document.startViewTransition(update).finished.catch(() => {});
+      else update();
+      uncover();
+    } else {
+      await wash.cover();
+      update();
+      uncover();
+      await wash.reveal();
+    }
+  } finally {
+    busy = false;
+  }
 }
 
 // Site links navigate in place; files, other sites, new tabs and modified clicks behave as usual.
@@ -80,4 +102,4 @@ document.addEventListener('touchstart', () => {}, { passive: true });
 const path = normalizePath(location.pathname);
 if (app.querySelector('main')?.dataset.route !== path) app.innerHTML = renderPage(path);
 setMeta(path);
-mount(path, { gate: intro });
+mount(path, { ready: intro });
