@@ -1,0 +1,3727 @@
+[
+  {
+    "id": "lookbook-01",
+    "group": "lookbook",
+    "source": "Design/Helion Graduation photos 2/1. Lookbook/MD26(C) - Hellion Lookbook 00001.jpg",
+    "sourceWidth": 3571,
+    "sourceHeight": 5000,
+    "sourceSha256": "e793916955263d2a5aac26b3e73fff1826edb606203df4164ff26983ede8ae84",
+    "width": 3571,
+    "height": 5000,
+    "large": {
+      "src": "/assets/lookbook-01-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/lookbook-01-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/lookbook-01-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "lookbook-02",
+    "group": "lookbook",
+    "source": "Design/Helion Graduation photos 2/1. Lookbook/MD26(C) - Hellion Lookbook 00002.jpg",
+    "sourceWidth": 3572,
+    "sourceHeight": 5000,
+    "sourceSha256": "4108279677972535f98798f9f57a11949e7756e6a7cf24b2c2452fd83ac2bf4b",
+    "width": 3572,
+    "height": 5000,
+    "large": {
+      "src": "/assets/lookbook-02-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/lookbook-02-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/lookbook-02-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "lookbook-03",
+    "group": "lookbook",
+    "source": "Design/Helion Graduation photos 2/1. Lookbook/MD26(C) - Hellion Lookbook 00003.jpg",
+    "sourceWidth": 3571,
+    "sourceHeight": 5000,
+    "sourceSha256": "164dbabe6872295a0052e2dd2975fa84dd4bb1ed6cad747df28a1071ee84edd3",
+    "width": 3571,
+    "height": 5000,
+    "large": {
+      "src": "/assets/lookbook-03-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/lookbook-03-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/lookbook-03-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "lookbook-04",
+    "group": "lookbook",
+    "source": "Design/Helion Graduation photos 2/1. Lookbook/MD26(C) - Hellion Lookbook 00004.jpg",
+    "sourceWidth": 3572,
+    "sourceHeight": 5000,
+    "sourceSha256": "4108279677972535f98798f9f57a11949e7756e6a7cf24b2c2452fd83ac2bf4b",
+    "width": 3572,
+    "height": 5000,
+    "large": {
+      "src": "/assets/lookbook-04-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/lookbook-04-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/lookbook-04-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "lookbook-05",
+    "group": "lookbook",
+    "source": "Design/Helion Graduation photos 2/1. Lookbook/MD26(C) - Hellion Lookbook 00005.jpg",
+    "sourceWidth": 3571,
+    "sourceHeight": 5000,
+    "sourceSha256": "53e2508151b66960464c28da0b7c9c8355d56dfa9d5386d6ba2b8ad1070d6b7f",
+    "width": 3571,
+    "height": 5000,
+    "large": {
+      "src": "/assets/lookbook-05-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/lookbook-05-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/lookbook-05-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "lookbook-06",
+    "group": "lookbook",
+    "source": "Design/Helion Graduation photos 2/1. Lookbook/MD26(C) - Hellion Lookbook 00006.jpg",
+    "sourceWidth": 3572,
+    "sourceHeight": 5000,
+    "sourceSha256": "a0b53ee23119c5082a1e77a32cee95019fecca15172781766f72ddef4d70d859",
+    "width": 3572,
+    "height": 5000,
+    "large": {
+      "src": "/assets/lookbook-06-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/lookbook-06-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/lookbook-06-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "lookbook-07",
+    "group": "lookbook",
+    "source": "Design/Helion Graduation photos 2/1. Lookbook/MD26(C) - Hellion Lookbook 00007.jpg",
+    "sourceWidth": 3571,
+    "sourceHeight": 5000,
+    "sourceSha256": "d9ed3c8087f6c123e72cb537a6798e65a1481b390076e63e4c154f1294609fc5",
+    "width": 3571,
+    "height": 5000,
+    "large": {
+      "src": "/assets/lookbook-07-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/lookbook-07-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/lookbook-07-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "lookbook-08",
+    "group": "lookbook",
+    "source": "Design/Helion Graduation photos 2/1. Lookbook/MD26(C) - Hellion Lookbook 00008.jpg",
+    "sourceWidth": 3572,
+    "sourceHeight": 5000,
+    "sourceSha256": "f1ddd822440332bad311e09b93eb56be7214f2deba2c045026d53beb9fb5b8ed",
+    "width": 3572,
+    "height": 5000,
+    "large": {
+      "src": "/assets/lookbook-08-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/lookbook-08-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/lookbook-08-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "lookbook-09",
+    "group": "lookbook",
+    "source": "Design/Helion Graduation photos 2/1. Lookbook/MD26(C) - Hellion Lookbook 00009.jpg",
+    "sourceWidth": 3571,
+    "sourceHeight": 5000,
+    "sourceSha256": "2874c1771d4918aa3cf7102f89f1c94ab806215a1a7698ac802719407ee9c7e7",
+    "width": 3571,
+    "height": 5000,
+    "large": {
+      "src": "/assets/lookbook-09-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/lookbook-09-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/lookbook-09-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "lookbook-10",
+    "group": "lookbook",
+    "source": "Design/Helion Graduation photos 2/1. Lookbook/MD26(C) - Hellion Lookbook 00010.jpg",
+    "sourceWidth": 3571,
+    "sourceHeight": 5000,
+    "sourceSha256": "664f315872b6a2fd1bbee862d49350dc06ded0edc86ed6a14ad141c550cc42e9",
+    "width": 3571,
+    "height": 5000,
+    "large": {
+      "src": "/assets/lookbook-10-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/lookbook-10-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/lookbook-10-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "lookbook-11",
+    "group": "lookbook",
+    "source": "Design/Helion Graduation photos 2/1. Lookbook/MD26(C) - Hellion Lookbook 00011.jpg",
+    "sourceWidth": 3571,
+    "sourceHeight": 5000,
+    "sourceSha256": "3535246cdc86ced7b6ff708da776a6b9b78be75521ef4f883084318ce3eebdc1",
+    "width": 3571,
+    "height": 5000,
+    "large": {
+      "src": "/assets/lookbook-11-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/lookbook-11-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/lookbook-11-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "lookbook-12",
+    "group": "lookbook",
+    "source": "Design/Helion Graduation photos 2/1. Lookbook/MD26(C) - Hellion Lookbook 00012.jpg",
+    "sourceWidth": 3572,
+    "sourceHeight": 5000,
+    "sourceSha256": "b68d072e78a43797dca7e9b54dcbd1f472d8c6fe7b2945d1a03107ad724d5dd1",
+    "width": 3572,
+    "height": 5000,
+    "large": {
+      "src": "/assets/lookbook-12-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/lookbook-12-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/lookbook-12-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "lookbook-13",
+    "group": "lookbook",
+    "source": "Design/Helion Graduation photos 2/1. Lookbook/MD26(C) - Hellion Lookbook 00013.jpg",
+    "sourceWidth": 3572,
+    "sourceHeight": 5000,
+    "sourceSha256": "662fdd8b4a86762cc9fc1c1a31b55785641feb6e5afe2679583cf2641f7d91a8",
+    "width": 3572,
+    "height": 5000,
+    "large": {
+      "src": "/assets/lookbook-13-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/lookbook-13-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/lookbook-13-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "lookbook-14",
+    "group": "lookbook",
+    "source": "Design/Helion Graduation photos 2/1. Lookbook/MD26(C) - Hellion Lookbook 00014.jpg",
+    "sourceWidth": 3572,
+    "sourceHeight": 5000,
+    "sourceSha256": "ec8ae4f155a56efb88be172a72df57e184700d06e9c61ad656f125950c5db062",
+    "width": 3572,
+    "height": 5000,
+    "large": {
+      "src": "/assets/lookbook-14-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/lookbook-14-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/lookbook-14-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "lookbook-15",
+    "group": "lookbook",
+    "source": "Design/Helion Graduation photos 2/1. Lookbook/MD26(C) - Hellion Lookbook 00015.jpg",
+    "sourceWidth": 3571,
+    "sourceHeight": 5000,
+    "sourceSha256": "124da5a91b11e2e0ca6f557608f2e314b00321c7ccc4db675b91b69a0c256f2b",
+    "width": 3571,
+    "height": 5000,
+    "large": {
+      "src": "/assets/lookbook-15-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/lookbook-15-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/lookbook-15-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "lookbook-16",
+    "group": "lookbook",
+    "source": "Design/Helion Graduation photos 2/1. Lookbook/MD26(C) - Hellion Lookbook 00016.jpg",
+    "sourceWidth": 3572,
+    "sourceHeight": 5000,
+    "sourceSha256": "246ad162f123d9655361fdfc8884fd28c2fb249c9d6c1267749e25d0ee40ad03",
+    "width": 3572,
+    "height": 5000,
+    "large": {
+      "src": "/assets/lookbook-16-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/lookbook-16-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/lookbook-16-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "lookbook-17",
+    "group": "lookbook",
+    "source": "Design/Helion Graduation photos 2/1. Lookbook/MD26(C) - Hellion Lookbook 00017.jpg",
+    "sourceWidth": 3571,
+    "sourceHeight": 5000,
+    "sourceSha256": "f8a82ae3aa1277ab47b436224b873f44ec7a160a6c72fecf71f60442e60c2f9a",
+    "width": 3571,
+    "height": 5000,
+    "large": {
+      "src": "/assets/lookbook-17-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/lookbook-17-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/lookbook-17-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "lookbook-18",
+    "group": "lookbook",
+    "source": "Design/Helion Graduation photos 2/1. Lookbook/MD26(C) - Hellion Lookbook 00018.jpg",
+    "sourceWidth": 3572,
+    "sourceHeight": 5000,
+    "sourceSha256": "1a7f696769a43ed491300a81180247e2bb2b4076f3bcc979137e89b2939f763a",
+    "width": 3572,
+    "height": 5000,
+    "large": {
+      "src": "/assets/lookbook-18-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/lookbook-18-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/lookbook-18-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "lookbook-19",
+    "group": "lookbook",
+    "source": "Design/Helion Graduation photos 2/1. Lookbook/MD26(C) - Hellion Lookbook 00019.jpg",
+    "sourceWidth": 3571,
+    "sourceHeight": 5000,
+    "sourceSha256": "139469d7ee2aa49d44cd04e97fd8f55d307880bb2cf4891b501675883e0a1675",
+    "width": 3571,
+    "height": 5000,
+    "large": {
+      "src": "/assets/lookbook-19-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/lookbook-19-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/lookbook-19-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "lookbook-20",
+    "group": "lookbook",
+    "source": "Design/Helion Graduation photos 2/1. Lookbook/MD26(C) - Hellion Lookbook 00020.jpg",
+    "sourceWidth": 3571,
+    "sourceHeight": 5000,
+    "sourceSha256": "381b4f4724178897ecaa08651ef3576ef500cbdacb9566f25ca89a26a19d761e",
+    "width": 3571,
+    "height": 5000,
+    "large": {
+      "src": "/assets/lookbook-20-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/lookbook-20-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/lookbook-20-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "lookbook-21",
+    "group": "lookbook",
+    "source": "Design/Helion Graduation photos 2/1. Lookbook/MD26(C) - Hellion Lookbook 00021.jpg",
+    "sourceWidth": 3571,
+    "sourceHeight": 5000,
+    "sourceSha256": "db5f05c66f035d0291451d0ff98e4c58a407cbd2ae8b8e2d0c86b960d11c7bca",
+    "width": 3571,
+    "height": 5000,
+    "large": {
+      "src": "/assets/lookbook-21-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/lookbook-21-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/lookbook-21-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "lookbook-22",
+    "group": "lookbook",
+    "source": "Design/Helion Graduation photos 2/1. Lookbook/MD26(C) - Hellion Lookbook 00022.jpg",
+    "sourceWidth": 3572,
+    "sourceHeight": 5000,
+    "sourceSha256": "e94acf8d438d48cf1c53e3b13132026553c2507947fc780f87913e2c03782bfd",
+    "width": 3572,
+    "height": 5000,
+    "large": {
+      "src": "/assets/lookbook-22-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/lookbook-22-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/lookbook-22-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "lookbook-23",
+    "group": "lookbook",
+    "source": "Design/Helion Graduation photos 2/1. Lookbook/MD26(C) - Hellion Lookbook 00023.jpg",
+    "sourceWidth": 3571,
+    "sourceHeight": 5000,
+    "sourceSha256": "05b3fb283c34489c49755578c6e87581fd133045aa3fe068237d7f386e33960f",
+    "width": 3571,
+    "height": 5000,
+    "large": {
+      "src": "/assets/lookbook-23-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/lookbook-23-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/lookbook-23-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "lookbook-24",
+    "group": "lookbook",
+    "source": "Design/Helion Graduation photos 2/1. Lookbook/MD26(C) - Hellion Lookbook 00024.jpg",
+    "sourceWidth": 3572,
+    "sourceHeight": 5000,
+    "sourceSha256": "61514a665a4b566a6492c0313232cb4a99d67370c18c624c791a5a1c91ba1754",
+    "width": 3572,
+    "height": 5000,
+    "large": {
+      "src": "/assets/lookbook-24-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/lookbook-24-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/lookbook-24-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "lookbook-25",
+    "group": "lookbook",
+    "source": "Design/Helion Graduation photos 2/1. Lookbook/MD26(C) - Hellion Lookbook 00025.jpg",
+    "sourceWidth": 3571,
+    "sourceHeight": 5000,
+    "sourceSha256": "aa0da7bd2b932ce452d9fa028c86ead67b2d11ea6f29691792956eba21abc558",
+    "width": 3571,
+    "height": 5000,
+    "large": {
+      "src": "/assets/lookbook-25-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/lookbook-25-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/lookbook-25-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "lookbook-26",
+    "group": "lookbook",
+    "source": "Design/Helion Graduation photos 2/1. Lookbook/MD26(C) - Hellion Lookbook 00026.jpg",
+    "sourceWidth": 3572,
+    "sourceHeight": 5000,
+    "sourceSha256": "09a38437101ba4bd455f9daa89692aea0e9db14065abe871dc6bb2cb00a85f33",
+    "width": 3572,
+    "height": 5000,
+    "large": {
+      "src": "/assets/lookbook-26-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/lookbook-26-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/lookbook-26-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "lookbook-27",
+    "group": "lookbook",
+    "source": "Design/Helion Graduation photos 2/1. Lookbook/MD26(C) - Hellion Lookbook 00027.jpg",
+    "sourceWidth": 3571,
+    "sourceHeight": 5000,
+    "sourceSha256": "230148033699850086e8ce26d9814b5bd5f5ed4a0f951b17e7b110e5ba9cceba",
+    "width": 3571,
+    "height": 5000,
+    "large": {
+      "src": "/assets/lookbook-27-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/lookbook-27-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/lookbook-27-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "lookbook-28",
+    "group": "lookbook",
+    "source": "Design/Helion Graduation photos 2/1. Lookbook/MD26(C) - Hellion Lookbook 00028.jpg",
+    "sourceWidth": 3572,
+    "sourceHeight": 5000,
+    "sourceSha256": "3a3df71c08e9f9f917c17f9dc9ad4f3e82f25bcb641d300ae8fc67d1bde49700",
+    "width": 3572,
+    "height": 5000,
+    "large": {
+      "src": "/assets/lookbook-28-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/lookbook-28-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/lookbook-28-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "lookbook-29",
+    "group": "lookbook",
+    "source": "Design/Helion Graduation photos 2/1. Lookbook/MD26(C) - Hellion Lookbook 00029.jpg",
+    "sourceWidth": 3571,
+    "sourceHeight": 5000,
+    "sourceSha256": "fc77aa4c87bd4c904d5109c825cd1212b52a715468ceae64934a3a0f6c9502c5",
+    "width": 3571,
+    "height": 5000,
+    "large": {
+      "src": "/assets/lookbook-29-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/lookbook-29-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/lookbook-29-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "lookbook-30",
+    "group": "lookbook",
+    "source": "Design/Helion Graduation photos 2/1. Lookbook/MD26(C) - Hellion Lookbook 00030.jpg",
+    "sourceWidth": 3572,
+    "sourceHeight": 5000,
+    "sourceSha256": "e0d3a46cfdbd3c82328b7d0d31159d526fc6920168afc038f3c57b7d0fe1fda9",
+    "width": 3572,
+    "height": 5000,
+    "large": {
+      "src": "/assets/lookbook-30-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/lookbook-30-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/lookbook-30-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "lookbook-31",
+    "group": "lookbook",
+    "source": "Design/Helion Graduation photos 2/1. Lookbook/MD26(C) - Hellion Lookbook 00031.jpg",
+    "sourceWidth": 3571,
+    "sourceHeight": 5000,
+    "sourceSha256": "2cdea4d4a84a2354d1ff6bbc356ae51977687359b488c6da9c480fdf9de4ccb7",
+    "width": 3571,
+    "height": 5000,
+    "large": {
+      "src": "/assets/lookbook-31-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/lookbook-31-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/lookbook-31-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "lookbook-32",
+    "group": "lookbook",
+    "source": "Design/Helion Graduation photos 2/1. Lookbook/MD26(C) - Hellion Lookbook 00032.jpg",
+    "sourceWidth": 3571,
+    "sourceHeight": 5000,
+    "sourceSha256": "8707c06b907a9a4d987c679ec175a9d6678971e8835b3615569df51921492369",
+    "width": 3571,
+    "height": 5000,
+    "large": {
+      "src": "/assets/lookbook-32-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/lookbook-32-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/lookbook-32-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "lookbook-33",
+    "group": "lookbook",
+    "source": "Design/Helion Graduation photos 2/1. Lookbook/MD26(C) - Hellion Lookbook 00033.jpg",
+    "sourceWidth": 3571,
+    "sourceHeight": 5000,
+    "sourceSha256": "04c01553f654ec0ef18546a0014c3ce3822010a50d5c05372c22e39e93c8113d",
+    "width": 3571,
+    "height": 5000,
+    "large": {
+      "src": "/assets/lookbook-33-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/lookbook-33-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/lookbook-33-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "lookbook-34",
+    "group": "lookbook",
+    "source": "Design/Helion Graduation photos 2/1. Lookbook/MD26(C) - Hellion Lookbook 00034.jpg",
+    "sourceWidth": 3572,
+    "sourceHeight": 5000,
+    "sourceSha256": "487ccc28212ab04d621e2185a8cdadf7428bf537c9dcf3a806749ee41f9ccb92",
+    "width": 3572,
+    "height": 5000,
+    "large": {
+      "src": "/assets/lookbook-34-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/lookbook-34-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/lookbook-34-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "lookbook-35",
+    "group": "lookbook",
+    "source": "Design/Helion Graduation photos 2/1. Lookbook/MD26(C) - Hellion Lookbook 00035.jpg",
+    "sourceWidth": 3570,
+    "sourceHeight": 5000,
+    "sourceSha256": "3a880a3211bf956c7229b4c96497d89a11c69d880fe6d08ab075d6c569a40f85",
+    "width": 3570,
+    "height": 5000,
+    "large": {
+      "src": "/assets/lookbook-35-large.webp",
+      "width": 1285,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/lookbook-35-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/lookbook-35-small.webp",
+      "width": 428,
+      "height": 600
+    }
+  },
+  {
+    "id": "lookbook-36",
+    "group": "lookbook",
+    "source": "Design/Helion Graduation photos 2/1. Lookbook/MD26(C) - Hellion Lookbook 00036.jpg",
+    "sourceWidth": 3571,
+    "sourceHeight": 5000,
+    "sourceSha256": "ad789c999fb38d6377897b764b3c8bc8549126b7532a163064a8ecfaa1767598",
+    "width": 3571,
+    "height": 5000,
+    "large": {
+      "src": "/assets/lookbook-36-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/lookbook-36-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/lookbook-36-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "editorial-v1-01",
+    "group": "editorial-v1",
+    "source": "Design/Helion Graduation photos 2/2. Editorial/MD26(C) - Hellion Editorial V1 00001.jpg",
+    "sourceWidth": 3572,
+    "sourceHeight": 5000,
+    "sourceSha256": "8f097f55113138f8d3e6252955ce9d37266e49ca88a31871712973db688b17f2",
+    "width": 3572,
+    "height": 5000,
+    "large": {
+      "src": "/assets/editorial-v1-01-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/editorial-v1-01-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/editorial-v1-01-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "editorial-v1-02",
+    "group": "editorial-v1",
+    "source": "Design/Helion Graduation photos 2/2. Editorial/MD26(C) - Hellion Editorial V1 00002.jpg",
+    "sourceWidth": 3571,
+    "sourceHeight": 5000,
+    "sourceSha256": "a1c85d7579e44ba03dccd2681fd0618f7bacd3e4f7f5fcf4f4919abcc3bc64d6",
+    "width": 3571,
+    "height": 5000,
+    "large": {
+      "src": "/assets/editorial-v1-02-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/editorial-v1-02-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/editorial-v1-02-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "editorial-v1-03",
+    "group": "editorial-v1",
+    "source": "Design/Helion Graduation photos 2/2. Editorial/MD26(C) - Hellion Editorial V1 00003.jpg",
+    "sourceWidth": 3572,
+    "sourceHeight": 5000,
+    "sourceSha256": "9e0db67176f5593fa808426c9c32bf733e517761c4bb639974d9a7e7867aae62",
+    "width": 3572,
+    "height": 5000,
+    "large": {
+      "src": "/assets/editorial-v1-03-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/editorial-v1-03-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/editorial-v1-03-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "editorial-v1-04",
+    "group": "editorial-v1",
+    "source": "Design/Helion Graduation photos 2/2. Editorial/MD26(C) - Hellion Editorial V1 00004.jpg",
+    "sourceWidth": 3571,
+    "sourceHeight": 5000,
+    "sourceSha256": "0e34a4a8a15145728d30b609b1528a6ee5235108febb4e90c900db562d51fbc3",
+    "width": 3571,
+    "height": 5000,
+    "large": {
+      "src": "/assets/editorial-v1-04-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/editorial-v1-04-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/editorial-v1-04-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "editorial-v1-05",
+    "group": "editorial-v1",
+    "source": "Design/Helion Graduation photos 2/2. Editorial/MD26(C) - Hellion Editorial V1 00005.jpg",
+    "sourceWidth": 3571,
+    "sourceHeight": 5000,
+    "sourceSha256": "54afc579d3c3ba0669defdca96d28c9f2040b23e43aa59dff524d75c1a5018eb",
+    "width": 3571,
+    "height": 5000,
+    "large": {
+      "src": "/assets/editorial-v1-05-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/editorial-v1-05-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/editorial-v1-05-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "editorial-v1-06",
+    "group": "editorial-v1",
+    "source": "Design/Helion Graduation photos 2/2. Editorial/MD26(C) - Hellion Editorial V1 00006.jpg",
+    "sourceWidth": 3572,
+    "sourceHeight": 5000,
+    "sourceSha256": "60fe41080d8f1978d4c048a8893c04402ca30c7a5303a60639a3a8132c2313d1",
+    "width": 3572,
+    "height": 5000,
+    "large": {
+      "src": "/assets/editorial-v1-06-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/editorial-v1-06-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/editorial-v1-06-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "editorial-v1-07",
+    "group": "editorial-v1",
+    "source": "Design/Helion Graduation photos 2/2. Editorial/MD26(C) - Hellion Editorial V1 00007.jpg",
+    "sourceWidth": 3572,
+    "sourceHeight": 5000,
+    "sourceSha256": "2cf8d2bbeb11130f39c3251eaad9cfbf991f57177be11a6169213b73f6ea3e95",
+    "width": 3572,
+    "height": 5000,
+    "large": {
+      "src": "/assets/editorial-v1-07-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/editorial-v1-07-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/editorial-v1-07-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "editorial-v1-08",
+    "group": "editorial-v1",
+    "source": "Design/Helion Graduation photos 2/2. Editorial/MD26(C) - Hellion Editorial V1 00008.jpg",
+    "sourceWidth": 3571,
+    "sourceHeight": 5000,
+    "sourceSha256": "e560e1817012eefa6c7b47aacdde7392f06d117bd1eda2999d8eb65bb2bb4358",
+    "width": 3571,
+    "height": 5000,
+    "large": {
+      "src": "/assets/editorial-v1-08-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/editorial-v1-08-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/editorial-v1-08-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "editorial-v1-09",
+    "group": "editorial-v1",
+    "source": "Design/Helion Graduation photos 2/2. Editorial/MD26(C) - Hellion Editorial V1 00009.jpg",
+    "sourceWidth": 3571,
+    "sourceHeight": 5000,
+    "sourceSha256": "164f7130778b169eeccf0597ad16903807b691da040bced1de8c881a11cc42f5",
+    "width": 3571,
+    "height": 5000,
+    "large": {
+      "src": "/assets/editorial-v1-09-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/editorial-v1-09-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/editorial-v1-09-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "editorial-v1-10",
+    "group": "editorial-v1",
+    "source": "Design/Helion Graduation photos 2/2. Editorial/MD26(C) - Hellion Editorial V1 00010.jpg",
+    "sourceWidth": 3571,
+    "sourceHeight": 5000,
+    "sourceSha256": "43fd3e41efd75aa72e3fc98e03dc6e9487c4bb469996b6d55a29daff53c99d9b",
+    "width": 3571,
+    "height": 5000,
+    "large": {
+      "src": "/assets/editorial-v1-10-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/editorial-v1-10-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/editorial-v1-10-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "editorial-v1-11",
+    "group": "editorial-v1",
+    "source": "Design/Helion Graduation photos 2/2. Editorial/MD26(C) - Hellion Editorial V1 00011.jpg",
+    "sourceWidth": 3572,
+    "sourceHeight": 5000,
+    "sourceSha256": "6723766a3c93820549bfd56f46e2cc7b20d4f6950877c878c5ea6d6306f7e17c",
+    "width": 3572,
+    "height": 5000,
+    "large": {
+      "src": "/assets/editorial-v1-11-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/editorial-v1-11-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/editorial-v1-11-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "editorial-v1-12",
+    "group": "editorial-v1",
+    "source": "Design/Helion Graduation photos 2/2. Editorial/MD26(C) - Hellion Editorial V1 00012.jpg",
+    "sourceWidth": 3572,
+    "sourceHeight": 5000,
+    "sourceSha256": "1570e4803b42dc335b2171215d066b88788c2b69b2d8590bf4a3adad77e9c501",
+    "width": 3572,
+    "height": 5000,
+    "large": {
+      "src": "/assets/editorial-v1-12-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/editorial-v1-12-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/editorial-v1-12-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "editorial-v1-13",
+    "group": "editorial-v1",
+    "source": "Design/Helion Graduation photos 2/2. Editorial/MD26(C) - Hellion Editorial V1 00013.jpg",
+    "sourceWidth": 5000,
+    "sourceHeight": 3571,
+    "sourceSha256": "5401b478a1ff738fbe4bf47d37837ebb0852d4ecaf0630879d8a54947bfea35b",
+    "width": 5000,
+    "height": 3571,
+    "large": {
+      "src": "/assets/editorial-v1-13-large.webp",
+      "width": 1800,
+      "height": 1286
+    },
+    "medium": {
+      "src": "/assets/editorial-v1-13-medium.webp",
+      "width": 1200,
+      "height": 857
+    },
+    "small": {
+      "src": "/assets/editorial-v1-13-small.webp",
+      "width": 600,
+      "height": 429
+    }
+  },
+  {
+    "id": "editorial-v1-14",
+    "group": "editorial-v1",
+    "source": "Design/Helion Graduation photos 2/2. Editorial/MD26(C) - Hellion Editorial V1 00014.jpg",
+    "sourceWidth": 5000,
+    "sourceHeight": 3334,
+    "sourceSha256": "67da9a13aedcf7520f21266eed1a83afca092e79ed3a818544ebe29c760f9cf3",
+    "width": 5000,
+    "height": 3334,
+    "large": {
+      "src": "/assets/editorial-v1-14-large.webp",
+      "width": 1800,
+      "height": 1200
+    },
+    "medium": {
+      "src": "/assets/editorial-v1-14-medium.webp",
+      "width": 1200,
+      "height": 800
+    },
+    "small": {
+      "src": "/assets/editorial-v1-14-small.webp",
+      "width": 600,
+      "height": 400
+    }
+  },
+  {
+    "id": "editorial-v1-15",
+    "group": "editorial-v1",
+    "source": "Design/Helion Graduation photos 2/2. Editorial/MD26(C) - Hellion Editorial V1 00015.jpg",
+    "sourceWidth": 3572,
+    "sourceHeight": 5000,
+    "sourceSha256": "4f5f9ae30d46f2ac821517681e14139b73dced7e261d5212358d077407b3e24f",
+    "width": 3572,
+    "height": 5000,
+    "large": {
+      "src": "/assets/editorial-v1-15-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/editorial-v1-15-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/editorial-v1-15-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "editorial-v1-16",
+    "group": "editorial-v1",
+    "source": "Design/Helion Graduation photos 2/2. Editorial/MD26(C) - Hellion Editorial V1 00016.jpg",
+    "sourceWidth": 3571,
+    "sourceHeight": 5000,
+    "sourceSha256": "10b762a9553a13be5decbd4258e9875827ef12c22ca80f71c29e73a393747777",
+    "width": 3571,
+    "height": 5000,
+    "large": {
+      "src": "/assets/editorial-v1-16-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/editorial-v1-16-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/editorial-v1-16-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "editorial-v1-17",
+    "group": "editorial-v1",
+    "source": "Design/Helion Graduation photos 2/2. Editorial/MD26(C) - Hellion Editorial V1 00017.jpg",
+    "sourceWidth": 3571,
+    "sourceHeight": 5000,
+    "sourceSha256": "68079a443ec0f3f412a73ce0b3d7da351a3e714a93fd295fbb6b035cba73c8ff",
+    "width": 3571,
+    "height": 5000,
+    "large": {
+      "src": "/assets/editorial-v1-17-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/editorial-v1-17-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/editorial-v1-17-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "editorial-v2-01",
+    "group": "editorial-v2",
+    "source": "Design/Helion Graduation photos/MD26(C) - Hellion Editorial V2 00001.jpg",
+    "sourceWidth": 2143,
+    "sourceHeight": 3000,
+    "sourceSha256": "d86099f01151a03a9dbc90807572d28e2cfff5f4bb6b26a4a85a4feed1cfd1ba",
+    "width": 2143,
+    "height": 3000,
+    "large": {
+      "src": "/assets/editorial-v2-01-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/editorial-v2-01-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/editorial-v2-01-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "editorial-v2-02",
+    "group": "editorial-v2",
+    "source": "Design/Helion Graduation photos/MD26(C) - Hellion Editorial V2 00002.jpg",
+    "sourceWidth": 2143,
+    "sourceHeight": 3000,
+    "sourceSha256": "dce998e88f5d454cb004339be03bbb90574a7a2a63009338794dacf0553d37ea",
+    "width": 2143,
+    "height": 3000,
+    "large": {
+      "src": "/assets/editorial-v2-02-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/editorial-v2-02-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/editorial-v2-02-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "editorial-v2-03",
+    "group": "editorial-v2",
+    "source": "Design/Helion Graduation photos/MD26(C) - Hellion Editorial V2 00003.jpg",
+    "sourceWidth": 2143,
+    "sourceHeight": 3000,
+    "sourceSha256": "d583e738c7b686925c996b80dff477feef2e55eb5a681c178084caadcba9125b",
+    "width": 2143,
+    "height": 3000,
+    "large": {
+      "src": "/assets/editorial-v2-03-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/editorial-v2-03-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/editorial-v2-03-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "editorial-v2-04",
+    "group": "editorial-v2",
+    "source": "Design/Helion Graduation photos/MD26(C) - Hellion Editorial V2 00004.jpg",
+    "sourceWidth": 2143,
+    "sourceHeight": 3000,
+    "sourceSha256": "3343fc780958cb1f959a3ee9acf7a0b002da1696755447c7b50b66caf45f1618",
+    "width": 2143,
+    "height": 3000,
+    "large": {
+      "src": "/assets/editorial-v2-04-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/editorial-v2-04-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/editorial-v2-04-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "editorial-v2-06",
+    "group": "editorial-v2",
+    "source": "Design/Helion Graduation photos/MD26(C) - Hellion Editorial V2 00006.jpg",
+    "sourceWidth": 2143,
+    "sourceHeight": 3000,
+    "sourceSha256": "dd4ce72898dfe10a5f0516efab3f697d3fcaa99e9d9aa286c0ac47aeac00430b",
+    "width": 2143,
+    "height": 3000,
+    "large": {
+      "src": "/assets/editorial-v2-06-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/editorial-v2-06-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/editorial-v2-06-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "editorial-v2-07",
+    "group": "editorial-v2",
+    "source": "Design/Helion Graduation photos/MD26(C) - Hellion Editorial V2 00007.jpg",
+    "sourceWidth": 2143,
+    "sourceHeight": 3000,
+    "sourceSha256": "0f8c569fc5e2d53d3decfbb2f13dfa492eeb799f1b5054d644b78637cbc6c169",
+    "width": 2143,
+    "height": 3000,
+    "large": {
+      "src": "/assets/editorial-v2-07-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/editorial-v2-07-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/editorial-v2-07-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "editorial-v2-08",
+    "group": "editorial-v2",
+    "source": "Design/Helion Graduation photos/MD26(C) - Hellion Editorial V2 00008.jpg",
+    "sourceWidth": 2143,
+    "sourceHeight": 3000,
+    "sourceSha256": "12d488f6291d40c01e6e51bee81c2c326f8a90e672fb14f76a58b6fc6d0798d6",
+    "width": 2143,
+    "height": 3000,
+    "large": {
+      "src": "/assets/editorial-v2-08-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/editorial-v2-08-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/editorial-v2-08-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "editorial-v2-09",
+    "group": "editorial-v2",
+    "source": "Design/Helion Graduation photos/MD26(C) - Hellion Editorial V2 00009.jpg",
+    "sourceWidth": 2143,
+    "sourceHeight": 3000,
+    "sourceSha256": "178d0bbe1994efef2b65867a1cdd1c7c460ec1bdd1f9b0deca249a9891a5a81d",
+    "width": 2143,
+    "height": 3000,
+    "large": {
+      "src": "/assets/editorial-v2-09-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/editorial-v2-09-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/editorial-v2-09-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "editorial-v2-10",
+    "group": "editorial-v2",
+    "source": "Design/Helion Graduation photos/MD26(C) - Hellion Editorial V2 00010.jpg",
+    "sourceWidth": 2143,
+    "sourceHeight": 3000,
+    "sourceSha256": "612cf5af1c3bc92603960a9fb45e56a3fbaad4806e656eeb754e59e877e323bd",
+    "width": 2143,
+    "height": 3000,
+    "large": {
+      "src": "/assets/editorial-v2-10-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/editorial-v2-10-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/editorial-v2-10-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "editorial-v2-11",
+    "group": "editorial-v2",
+    "source": "Design/Helion Graduation photos/MD26(C) - Hellion Editorial V2 00011.jpg",
+    "sourceWidth": 2143,
+    "sourceHeight": 3000,
+    "sourceSha256": "aab92bc0432ecb58ff1840cf938039d57495299c3c0f2512fa0dafb8217a3720",
+    "width": 2143,
+    "height": 3000,
+    "large": {
+      "src": "/assets/editorial-v2-11-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/editorial-v2-11-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/editorial-v2-11-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "editorial-v2-13",
+    "group": "editorial-v2",
+    "source": "Design/Helion Graduation photos/MD26(C) - Hellion Editorial V2 00013.jpg",
+    "sourceWidth": 2143,
+    "sourceHeight": 3000,
+    "sourceSha256": "c17f64beb5f6e03c81112f465ae2773ed7de373b85641a82c2073943972c3f6e",
+    "width": 2143,
+    "height": 3000,
+    "large": {
+      "src": "/assets/editorial-v2-13-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/editorial-v2-13-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/editorial-v2-13-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "editorial-v2-14",
+    "group": "editorial-v2",
+    "source": "Design/Helion Graduation photos/MD26(C) - Hellion Editorial V2 00014.jpg",
+    "sourceWidth": 2143,
+    "sourceHeight": 3000,
+    "sourceSha256": "af88a5357916f0e9b80c069237a1716159fc1ed411e8a870aa9eaa065428c166",
+    "width": 2143,
+    "height": 3000,
+    "large": {
+      "src": "/assets/editorial-v2-14-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/editorial-v2-14-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/editorial-v2-14-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "editorial-v2-15",
+    "group": "editorial-v2",
+    "source": "Design/Helion Graduation photos/MD26(C) - Hellion Editorial V2 00015.jpg",
+    "sourceWidth": 2143,
+    "sourceHeight": 3000,
+    "sourceSha256": "7ecdf3e2d084349d77d084c045f77964481af5c3e41711c1e22b420264e057a0",
+    "width": 2143,
+    "height": 3000,
+    "large": {
+      "src": "/assets/editorial-v2-15-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/editorial-v2-15-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/editorial-v2-15-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "editorial-v2-16",
+    "group": "editorial-v2",
+    "source": "Design/Helion Graduation photos/MD26(C) - Hellion Editorial V2 00016.jpg",
+    "sourceWidth": 3000,
+    "sourceHeight": 2143,
+    "sourceSha256": "8500b2f0ba9dd5af1db87bd3d074135e29db2a7766b7fde6bb48fa09a7cf113d",
+    "width": 3000,
+    "height": 2143,
+    "large": {
+      "src": "/assets/editorial-v2-16-large.webp",
+      "width": 1800,
+      "height": 1286
+    },
+    "medium": {
+      "src": "/assets/editorial-v2-16-medium.webp",
+      "width": 1200,
+      "height": 857
+    },
+    "small": {
+      "src": "/assets/editorial-v2-16-small.webp",
+      "width": 600,
+      "height": 429
+    }
+  },
+  {
+    "id": "editorial-v2-17",
+    "group": "editorial-v2",
+    "source": "Design/Helion Graduation photos/MD26(C) - Hellion Editorial V2 00017.jpg",
+    "sourceWidth": 2143,
+    "sourceHeight": 3000,
+    "sourceSha256": "36ef43323257c781ae97463bc05be4948b2e6e9dd67421ef372fb5bab71d9ad0",
+    "width": 2143,
+    "height": 3000,
+    "large": {
+      "src": "/assets/editorial-v2-17-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/editorial-v2-17-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/editorial-v2-17-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "editorial-v2-18",
+    "group": "editorial-v2",
+    "source": "Design/Helion Graduation photos/MD26(C) - Hellion Editorial V2 00018.jpg",
+    "sourceWidth": 3000,
+    "sourceHeight": 2143,
+    "sourceSha256": "329aa57cb44dc85c23b3f6719000d83802497e0f8260761797699de96a7388f1",
+    "width": 3000,
+    "height": 2143,
+    "large": {
+      "src": "/assets/editorial-v2-18-large.webp",
+      "width": 1800,
+      "height": 1286
+    },
+    "medium": {
+      "src": "/assets/editorial-v2-18-medium.webp",
+      "width": 1200,
+      "height": 857
+    },
+    "small": {
+      "src": "/assets/editorial-v2-18-small.webp",
+      "width": 600,
+      "height": 429
+    }
+  },
+  {
+    "id": "editorial-v2-19",
+    "group": "editorial-v2",
+    "source": "Design/Helion Graduation photos/MD26(C) - Hellion Editorial V2 00019.jpg",
+    "sourceWidth": 2143,
+    "sourceHeight": 3000,
+    "sourceSha256": "4dee515f4bf64413c8d2aa16a6877e2f2eb4c7367fd9e57eb8cede7a474a0de2",
+    "width": 2143,
+    "height": 3000,
+    "large": {
+      "src": "/assets/editorial-v2-19-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/editorial-v2-19-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/editorial-v2-19-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "editorial-v2-20",
+    "group": "editorial-v2",
+    "source": "Design/Helion Graduation photos/MD26(C) - Hellion Editorial V2 00020.jpg",
+    "sourceWidth": 2143,
+    "sourceHeight": 3000,
+    "sourceSha256": "0db860e202c5ab78fcd0ef25a1ebfd5f82418a8d9a8ca79d96c3c90d6561f069",
+    "width": 2143,
+    "height": 3000,
+    "large": {
+      "src": "/assets/editorial-v2-20-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/editorial-v2-20-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/editorial-v2-20-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "editorial-v2-21",
+    "group": "editorial-v2",
+    "source": "Design/Helion Graduation photos/MD26(C) - Hellion Editorial V2 00021.jpg",
+    "sourceWidth": 2143,
+    "sourceHeight": 3000,
+    "sourceSha256": "9188691556b8ad98466af223fe171740769e0e71ef781bed9ccaaff3f5de8f5d",
+    "width": 2143,
+    "height": 3000,
+    "large": {
+      "src": "/assets/editorial-v2-21-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/editorial-v2-21-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/editorial-v2-21-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "editorial-v2-22",
+    "group": "editorial-v2",
+    "source": "Design/Helion Graduation photos/MD26(C) - Hellion Editorial V2 00022.jpg",
+    "sourceWidth": 2143,
+    "sourceHeight": 3000,
+    "sourceSha256": "2f27a46d84b9f73d54a3e2a54b5b4bc61103f973ca951e099480d885e5cddfed",
+    "width": 2143,
+    "height": 3000,
+    "large": {
+      "src": "/assets/editorial-v2-22-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/editorial-v2-22-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/editorial-v2-22-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "editorial-v2-23",
+    "group": "editorial-v2",
+    "source": "Design/Helion Graduation photos/MD26(C) - Hellion Editorial V2 00023.jpg",
+    "sourceWidth": 2143,
+    "sourceHeight": 3000,
+    "sourceSha256": "90ff7e5e5da8389caf77eec11e11fde90273981ee3abab482ae6f68effdc199d",
+    "width": 2143,
+    "height": 3000,
+    "large": {
+      "src": "/assets/editorial-v2-23-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/editorial-v2-23-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/editorial-v2-23-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "editorial-v2-24",
+    "group": "editorial-v2",
+    "source": "Design/Helion Graduation photos/MD26(C) - Hellion Editorial V2 00024.jpg",
+    "sourceWidth": 3000,
+    "sourceHeight": 2143,
+    "sourceSha256": "9b8602ff45c332b72439e0cbfb05f9bcc2decda7eb06ba2180335a373235a2bd",
+    "width": 3000,
+    "height": 2143,
+    "large": {
+      "src": "/assets/editorial-v2-24-large.webp",
+      "width": 1800,
+      "height": 1286
+    },
+    "medium": {
+      "src": "/assets/editorial-v2-24-medium.webp",
+      "width": 1200,
+      "height": 857
+    },
+    "small": {
+      "src": "/assets/editorial-v2-24-small.webp",
+      "width": 600,
+      "height": 429
+    }
+  },
+  {
+    "id": "editorial-v2-25",
+    "group": "editorial-v2",
+    "source": "Design/Helion Graduation photos/MD26(C) - Hellion Editorial V2 00025.jpg",
+    "sourceWidth": 2143,
+    "sourceHeight": 3000,
+    "sourceSha256": "41728140c38a3b2d7187c4d7a9f0b6defeafca88b544a84ca1cdcf6ffe12cfe2",
+    "width": 2143,
+    "height": 3000,
+    "large": {
+      "src": "/assets/editorial-v2-25-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/editorial-v2-25-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/editorial-v2-25-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "editorial-v2-26",
+    "group": "editorial-v2",
+    "source": "Design/Helion Graduation photos/MD26(C) - Hellion Editorial V2 00026.jpg",
+    "sourceWidth": 2000,
+    "sourceHeight": 3000,
+    "sourceSha256": "f0f2d06a1e284344870c754bbc5c6e1aa6f74ff6139d9b0c35994f0f6a31a410",
+    "width": 2000,
+    "height": 3000,
+    "large": {
+      "src": "/assets/editorial-v2-26-large.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/editorial-v2-26-medium.webp",
+      "width": 800,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/editorial-v2-26-small.webp",
+      "width": 400,
+      "height": 600
+    }
+  },
+  {
+    "id": "editorial-v2-27",
+    "group": "editorial-v2",
+    "source": "Design/Helion Graduation photos/MD26(C) - Hellion Editorial V2 00027.jpg",
+    "sourceWidth": 2143,
+    "sourceHeight": 3000,
+    "sourceSha256": "746e31b0ad7fe8bc954af49dce07a78f22201c0a25bda7d4ee65f7ad25d1eb38",
+    "width": 2143,
+    "height": 3000,
+    "large": {
+      "src": "/assets/editorial-v2-27-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/editorial-v2-27-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/editorial-v2-27-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "editorial-v2-28",
+    "group": "editorial-v2",
+    "source": "Design/Helion Graduation photos/MD26(C) - Hellion Editorial V2 00028.jpg",
+    "sourceWidth": 2143,
+    "sourceHeight": 3000,
+    "sourceSha256": "02151466d07896d8a2c762b1c81ee88549df743fef9b9c5457353a9d37fc27d5",
+    "width": 2143,
+    "height": 3000,
+    "large": {
+      "src": "/assets/editorial-v2-28-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/editorial-v2-28-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/editorial-v2-28-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "editorial-v2-29",
+    "group": "editorial-v2",
+    "source": "Design/Helion Graduation photos/MD26(C) - Hellion Editorial V2 00029.jpg",
+    "sourceWidth": 2143,
+    "sourceHeight": 3000,
+    "sourceSha256": "7217ec8d13acd64897421bf7fe857b3b2f62ca32ff0b6a7aa600c3280c93e963",
+    "width": 2143,
+    "height": 3000,
+    "large": {
+      "src": "/assets/editorial-v2-29-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/editorial-v2-29-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/editorial-v2-29-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "editorial-v2-30",
+    "group": "editorial-v2",
+    "source": "Design/Helion Graduation photos/MD26(C) - Hellion Editorial V2 00030.jpg",
+    "sourceWidth": 2143,
+    "sourceHeight": 3000,
+    "sourceSha256": "8cca126bd8bcb8e6248b9663a3df7e05894fa3e0e9f1e310428cd4363e5bbfeb",
+    "width": 2143,
+    "height": 3000,
+    "large": {
+      "src": "/assets/editorial-v2-30-large.webp",
+      "width": 1286,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/editorial-v2-30-medium.webp",
+      "width": 857,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/editorial-v2-30-small.webp",
+      "width": 429,
+      "height": 600
+    }
+  },
+  {
+    "id": "anima-02",
+    "group": "anima",
+    "source": "Anima Obscura/DB_STORM_EDIT_2-2.jpg",
+    "sourceWidth": 2748,
+    "sourceHeight": 4122,
+    "sourceSha256": "6fe1035fdde41470a302391fa0ff18e6c058e277f0818c49a3f992384836b396",
+    "width": 2748,
+    "height": 4122,
+    "large": {
+      "src": "/assets/anima-02-large.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/anima-02-medium.webp",
+      "width": 800,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/anima-02-small.webp",
+      "width": 400,
+      "height": 600
+    }
+  },
+  {
+    "id": "anima-03",
+    "group": "anima",
+    "source": "Anima Obscura/DB_STORM_EDIT_2-3.jpg",
+    "sourceWidth": 3216,
+    "sourceHeight": 4825,
+    "sourceSha256": "0eaf52548350c429a4ba998e61d7efbdbd127fbc3781d8513bcd171d45d2b0c4",
+    "width": 3216,
+    "height": 4825,
+    "large": {
+      "src": "/assets/anima-03-large.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/anima-03-medium.webp",
+      "width": 800,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/anima-03-small.webp",
+      "width": 400,
+      "height": 600
+    }
+  },
+  {
+    "id": "anima-04",
+    "group": "anima",
+    "source": "Anima Obscura/DB_STORM_EDIT_2-4.jpg",
+    "sourceWidth": 3648,
+    "sourceHeight": 5472,
+    "sourceSha256": "df4e21f87370bdb1958566ed2bfba022105a95849e92719cd6230acfdb4056bf",
+    "width": 3648,
+    "height": 5472,
+    "large": {
+      "src": "/assets/anima-04-large.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/anima-04-medium.webp",
+      "width": 800,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/anima-04-small.webp",
+      "width": 400,
+      "height": 600
+    }
+  },
+  {
+    "id": "anima-05",
+    "group": "anima",
+    "source": "Anima Obscura/DB_STORM_EDIT_2-5.jpg",
+    "sourceWidth": 3648,
+    "sourceHeight": 5472,
+    "sourceSha256": "8f60642f2efc07cf862f99513315a803cbe567eb5126bd1bf04eabfff242130a",
+    "width": 3648,
+    "height": 5472,
+    "large": {
+      "src": "/assets/anima-05-large.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/anima-05-medium.webp",
+      "width": 800,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/anima-05-small.webp",
+      "width": 400,
+      "height": 600
+    }
+  },
+  {
+    "id": "anima-06",
+    "group": "anima",
+    "source": "Anima Obscura/DB_STORM_EDIT_2-6.jpg",
+    "sourceWidth": 3035,
+    "sourceHeight": 4553,
+    "sourceSha256": "3eb7eda4cf9a8d3cb2ef8c0fca9c6aad5c4d44119156bba9cfa8d594b5f7bd35",
+    "width": 3035,
+    "height": 4553,
+    "large": {
+      "src": "/assets/anima-06-large.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/anima-06-medium.webp",
+      "width": 800,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/anima-06-small.webp",
+      "width": 400,
+      "height": 600
+    }
+  },
+  {
+    "id": "anima-07",
+    "group": "anima",
+    "source": "Anima Obscura/DB_STORM_EDIT_2-7.jpg",
+    "sourceWidth": 3573,
+    "sourceHeight": 5359,
+    "sourceSha256": "85843c0c0133756feea1d19a4229b5caa1379fd7dae6c4c1ca8f19322cf9facc",
+    "width": 3573,
+    "height": 5359,
+    "large": {
+      "src": "/assets/anima-07-large.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/anima-07-medium.webp",
+      "width": 800,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/anima-07-small.webp",
+      "width": 400,
+      "height": 600
+    }
+  },
+  {
+    "id": "anima-08",
+    "group": "anima",
+    "source": "Anima Obscura/DB_STORM_EDIT_2-8.jpg",
+    "sourceWidth": 3361,
+    "sourceHeight": 5042,
+    "sourceSha256": "0571a8bc4e576987f5e89f49a5d71cfae27f77b3124136ed8676dbead7397211",
+    "width": 3361,
+    "height": 5042,
+    "large": {
+      "src": "/assets/anima-08-large.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/anima-08-medium.webp",
+      "width": 800,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/anima-08-small.webp",
+      "width": 400,
+      "height": 600
+    }
+  },
+  {
+    "id": "anima-09",
+    "group": "anima",
+    "source": "Anima Obscura/DB_STORM_EDIT_2-9.jpg",
+    "sourceWidth": 2997,
+    "sourceHeight": 4495,
+    "sourceSha256": "4b8470362c643f9d85f07ad4766505a727f85893b696ff8f8a0dfeefb527180e",
+    "width": 2997,
+    "height": 4495,
+    "large": {
+      "src": "/assets/anima-09-large.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/anima-09-medium.webp",
+      "width": 800,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/anima-09-small.webp",
+      "width": 400,
+      "height": 600
+    }
+  },
+  {
+    "id": "anima-10",
+    "group": "anima",
+    "source": "Anima Obscura/DB_STORM_EDIT_2-10.jpg",
+    "sourceWidth": 3648,
+    "sourceHeight": 5472,
+    "sourceSha256": "d7673505b5e220a9d790fcae4a139e16f8d39a6ff5f4db0b1cac3f8b29ecbf96",
+    "width": 3648,
+    "height": 5472,
+    "large": {
+      "src": "/assets/anima-10-large.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/anima-10-medium.webp",
+      "width": 800,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/anima-10-small.webp",
+      "width": 400,
+      "height": 600
+    }
+  },
+  {
+    "id": "anima-11",
+    "group": "anima",
+    "source": "Anima Obscura/DB_STORM_EDIT_2-11.jpg",
+    "sourceWidth": 3459,
+    "sourceHeight": 5189,
+    "sourceSha256": "2b0ef0bd7a5bcaf791175327d2711d0dddcb4b995a391a87747ee33e5be4c136",
+    "width": 3459,
+    "height": 5189,
+    "large": {
+      "src": "/assets/anima-11-large.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/anima-11-medium.webp",
+      "width": 800,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/anima-11-small.webp",
+      "width": 400,
+      "height": 600
+    }
+  },
+  {
+    "id": "anima-12",
+    "group": "anima",
+    "source": "Anima Obscura/DB_STORM_EDIT_2-12.jpg",
+    "sourceWidth": 3521,
+    "sourceHeight": 5281,
+    "sourceSha256": "39ecb423da4b4a5446182c777fef6c3353ab45b1b6a904d7cc37a1a52e790fb8",
+    "width": 3521,
+    "height": 5281,
+    "large": {
+      "src": "/assets/anima-12-large.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/anima-12-medium.webp",
+      "width": 800,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/anima-12-small.webp",
+      "width": 400,
+      "height": 600
+    }
+  },
+  {
+    "id": "anima-13",
+    "group": "anima",
+    "source": "Anima Obscura/DB_STORM_EDIT_2-13.jpg",
+    "sourceWidth": 3268,
+    "sourceHeight": 4902,
+    "sourceSha256": "08ba60705b2fb79d06e81342afecc2fbe03cdac3deed558f28a9ca64bbb05633",
+    "width": 3268,
+    "height": 4902,
+    "large": {
+      "src": "/assets/anima-13-large.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/anima-13-medium.webp",
+      "width": 800,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/anima-13-small.webp",
+      "width": 400,
+      "height": 600
+    }
+  },
+  {
+    "id": "anima-14",
+    "group": "anima",
+    "source": "Anima Obscura/DB_STORM_EDIT_2-14.jpg",
+    "sourceWidth": 3340,
+    "sourceHeight": 5010,
+    "sourceSha256": "4b29fe2190110451b98990d91c5399d23eea3341fbacfab0f0720262f0de1fcf",
+    "width": 3340,
+    "height": 5010,
+    "large": {
+      "src": "/assets/anima-14-large.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/anima-14-medium.webp",
+      "width": 800,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/anima-14-small.webp",
+      "width": 400,
+      "height": 600
+    }
+  },
+  {
+    "id": "anima-15",
+    "group": "anima",
+    "source": "Anima Obscura/DB_STORM_EDIT_2-15.jpg",
+    "sourceWidth": 3648,
+    "sourceHeight": 5472,
+    "sourceSha256": "38ce57d264c09d13e9fba8f36e096d9346a047c2410a3110c6b7c8ec96340929",
+    "width": 3648,
+    "height": 5472,
+    "large": {
+      "src": "/assets/anima-15-large.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/anima-15-medium.webp",
+      "width": 800,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/anima-15-small.webp",
+      "width": 400,
+      "height": 600
+    }
+  },
+  {
+    "id": "anima-16",
+    "group": "anima",
+    "source": "Anima Obscura/DB_STORM_EDIT_2-16.jpg",
+    "sourceWidth": 3437,
+    "sourceHeight": 5156,
+    "sourceSha256": "863ea8510c1a3993053bbf989d2396e92645cec2e7058d665a6b8de9b8550c0a",
+    "width": 3437,
+    "height": 5156,
+    "large": {
+      "src": "/assets/anima-16-large.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/anima-16-medium.webp",
+      "width": 800,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/anima-16-small.webp",
+      "width": 400,
+      "height": 600
+    }
+  },
+  {
+    "id": "anima-17",
+    "group": "anima",
+    "source": "Anima Obscura/DB_STORM_EDIT_2-17.jpg",
+    "sourceWidth": 3461,
+    "sourceHeight": 5192,
+    "sourceSha256": "ddcb1af06978396f31e926d79998d3473f225aa7b18003a9407a87de21ddc47c",
+    "width": 3461,
+    "height": 5192,
+    "large": {
+      "src": "/assets/anima-17-large.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/anima-17-medium.webp",
+      "width": 800,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/anima-17-small.webp",
+      "width": 400,
+      "height": 600
+    }
+  },
+  {
+    "id": "anima-18",
+    "group": "anima",
+    "source": "Anima Obscura/DB_STORM_EDIT_2-18.jpg",
+    "sourceWidth": 3473,
+    "sourceHeight": 5210,
+    "sourceSha256": "ff590e25c3399baf4e5fed4ff09c71ba2affb3292c1404d950130f8c10800acb",
+    "width": 3473,
+    "height": 5210,
+    "large": {
+      "src": "/assets/anima-18-large.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/anima-18-medium.webp",
+      "width": 800,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/anima-18-small.webp",
+      "width": 400,
+      "height": 600
+    }
+  },
+  {
+    "id": "anima-19",
+    "group": "anima",
+    "source": "Anima Obscura/DB_STORM_EDIT_2-19.jpg",
+    "sourceWidth": 3339,
+    "sourceHeight": 5009,
+    "sourceSha256": "d813bccb747d5c7778972cb6ea141aa9d2474d7a8c8edfcc5d049ca04c2c8ebf",
+    "width": 3339,
+    "height": 5009,
+    "large": {
+      "src": "/assets/anima-19-large.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/anima-19-medium.webp",
+      "width": 800,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/anima-19-small.webp",
+      "width": 400,
+      "height": 600
+    }
+  },
+  {
+    "id": "anima-20",
+    "group": "anima",
+    "source": "Anima Obscura/DB_STORM_EDIT_2-20.jpg",
+    "sourceWidth": 3253,
+    "sourceHeight": 4880,
+    "sourceSha256": "1fb80c0b8eaa615816ee4d24c88beef706a7b059cbf6592b0bd8519ab02c196f",
+    "width": 3253,
+    "height": 4880,
+    "large": {
+      "src": "/assets/anima-20-large.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/anima-20-medium.webp",
+      "width": 800,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/anima-20-small.webp",
+      "width": 400,
+      "height": 600
+    }
+  },
+  {
+    "id": "anima-21",
+    "group": "anima",
+    "source": "Anima Obscura/DB_STORM_EDIT_2-21.jpg",
+    "sourceWidth": 3559,
+    "sourceHeight": 5338,
+    "sourceSha256": "c8ca37b205d918397dfe6e1ea71fd29a0603256fb466f61f962d71f35a14118a",
+    "width": 3559,
+    "height": 5338,
+    "large": {
+      "src": "/assets/anima-21-large.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/anima-21-medium.webp",
+      "width": 800,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/anima-21-small.webp",
+      "width": 400,
+      "height": 600
+    }
+  },
+  {
+    "id": "anima-22",
+    "group": "anima",
+    "source": "Anima Obscura/DB_STORM_EDIT_2-22.jpg",
+    "sourceWidth": 3648,
+    "sourceHeight": 5472,
+    "sourceSha256": "4d01f63496d907ace8a8c082c5d8e4342e7e53a75585c0ead5b2ab8ec812dd1f",
+    "width": 3648,
+    "height": 5472,
+    "large": {
+      "src": "/assets/anima-22-large.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/anima-22-medium.webp",
+      "width": 800,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/anima-22-small.webp",
+      "width": 400,
+      "height": 600
+    }
+  },
+  {
+    "id": "anima-23",
+    "group": "anima",
+    "source": "Anima Obscura/DB_STORM_EDIT_2-23.jpg",
+    "sourceWidth": 2937,
+    "sourceHeight": 4406,
+    "sourceSha256": "23df3e7f03ce394e8a0c840ebeb8eb8afd5d247d212448651df0ca158f74f49f",
+    "width": 2937,
+    "height": 4406,
+    "large": {
+      "src": "/assets/anima-23-large.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/anima-23-medium.webp",
+      "width": 800,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/anima-23-small.webp",
+      "width": 400,
+      "height": 600
+    }
+  },
+  {
+    "id": "anima-24",
+    "group": "anima",
+    "source": "Anima Obscura/DB_STORM_EDIT_2-24.jpg",
+    "sourceWidth": 3275,
+    "sourceHeight": 4913,
+    "sourceSha256": "39c9240f992bcea03f6a8fdfcbd59ad8fd1b98bc5ad486590304a9bdbe9e9ed5",
+    "width": 3275,
+    "height": 4913,
+    "large": {
+      "src": "/assets/anima-24-large.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/anima-24-medium.webp",
+      "width": 800,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/anima-24-small.webp",
+      "width": 400,
+      "height": 600
+    }
+  },
+  {
+    "id": "anima-25",
+    "group": "anima",
+    "source": "Anima Obscura/DB_STORM_EDIT_2-25.jpg",
+    "sourceWidth": 4881,
+    "sourceHeight": 3254,
+    "sourceSha256": "5eba4a4fea2d951cbca81b8bd8e03ac4a0b7a26dd5df52d3fa401ac282d54c10",
+    "width": 4881,
+    "height": 3254,
+    "large": {
+      "src": "/assets/anima-25-large.webp",
+      "width": 1800,
+      "height": 1200
+    },
+    "medium": {
+      "src": "/assets/anima-25-medium.webp",
+      "width": 1200,
+      "height": 800
+    },
+    "small": {
+      "src": "/assets/anima-25-small.webp",
+      "width": 600,
+      "height": 400
+    }
+  },
+  {
+    "id": "anima-26",
+    "group": "anima",
+    "source": "Anima Obscura/DB_STORM_EDIT_2-26.jpg",
+    "sourceWidth": 3593,
+    "sourceHeight": 5389,
+    "sourceSha256": "711a53e39cf9b72d2ed79301047ab293ef77bb004a58d1494d1e1ab7c2dfda03",
+    "width": 3593,
+    "height": 5389,
+    "large": {
+      "src": "/assets/anima-26-large.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/anima-26-medium.webp",
+      "width": 800,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/anima-26-small.webp",
+      "width": 400,
+      "height": 600
+    }
+  },
+  {
+    "id": "anima-27",
+    "group": "anima",
+    "source": "Anima Obscura/DB_STORM_EDIT_2-27.jpg",
+    "sourceWidth": 2851,
+    "sourceHeight": 4277,
+    "sourceSha256": "f9dc5b86c49f7c65c93fab7ff948d4f437b928ffb999e9bff7cd1df24c0883df",
+    "width": 2851,
+    "height": 4277,
+    "large": {
+      "src": "/assets/anima-27-large.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/anima-27-medium.webp",
+      "width": 800,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/anima-27-small.webp",
+      "width": 400,
+      "height": 600
+    }
+  },
+  {
+    "id": "anima-28",
+    "group": "anima",
+    "source": "Anima Obscura/DB_STORM_EDIT_2-28.jpg",
+    "sourceWidth": 3394,
+    "sourceHeight": 5091,
+    "sourceSha256": "d00ac14abfb01b0765e6e9bd1c25ce6f803bef9ef72dfd63b59718b9acf22305",
+    "width": 3394,
+    "height": 5091,
+    "large": {
+      "src": "/assets/anima-28-large.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/anima-28-medium.webp",
+      "width": 800,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/anima-28-small.webp",
+      "width": 400,
+      "height": 600
+    }
+  },
+  {
+    "id": "anima-29",
+    "group": "anima",
+    "source": "Anima Obscura/DB_STORM_EDIT_2-29.jpg",
+    "sourceWidth": 1373,
+    "sourceHeight": 2060,
+    "sourceSha256": "93bfc6a0b0424259610515f9fb45acb2ca477919d65c41fc4a6d05469b2a269e",
+    "width": 1373,
+    "height": 2060,
+    "large": {
+      "src": "/assets/anima-29-large.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/anima-29-medium.webp",
+      "width": 800,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/anima-29-small.webp",
+      "width": 400,
+      "height": 600
+    }
+  },
+  {
+    "id": "styling-9336",
+    "group": "styling",
+    "source": "Styling/internship styling assisting Annet Veerbeek/IMG_9336.jpg",
+    "sourceWidth": 1179,
+    "sourceHeight": 1471,
+    "sourceSha256": "e2ad67d5bd3bb74ee1856c8ff87cb30592d1379433622e5aab8aad468c01a28f",
+    "width": 1179,
+    "height": 1471,
+    "large": {
+      "src": "/assets/styling-9336-large.webp",
+      "width": 1179,
+      "height": 1471
+    },
+    "medium": {
+      "src": "/assets/styling-9336-medium.webp",
+      "width": 786,
+      "height": 981
+    },
+    "small": {
+      "src": "/assets/styling-9336-small.webp",
+      "width": 481,
+      "height": 600
+    }
+  },
+  {
+    "id": "styling-9337",
+    "group": "styling",
+    "source": "Styling/internship styling assisting Annet Veerbeek/IMG_9337.jpg",
+    "sourceWidth": 1179,
+    "sourceHeight": 1468,
+    "sourceSha256": "e84e4f94dd318b012091fd75d86348eaf1d9248750bbc4ace3222b68012eb907",
+    "width": 1179,
+    "height": 1468,
+    "large": {
+      "src": "/assets/styling-9337-large.webp",
+      "width": 1179,
+      "height": 1468
+    },
+    "medium": {
+      "src": "/assets/styling-9337-medium.webp",
+      "width": 786,
+      "height": 979
+    },
+    "small": {
+      "src": "/assets/styling-9337-small.webp",
+      "width": 482,
+      "height": 600
+    }
+  },
+  {
+    "id": "styling-9338",
+    "group": "styling",
+    "source": "Styling/internship styling assisting Annet Veerbeek/IMG_9338.jpg",
+    "sourceWidth": 1179,
+    "sourceHeight": 1471,
+    "sourceSha256": "0329093d8507cfa4e7ea9583e71a11330e5095e8821d06e3fa00d04b801d14d6",
+    "width": 1179,
+    "height": 1471,
+    "large": {
+      "src": "/assets/styling-9338-large.webp",
+      "width": 1179,
+      "height": 1471
+    },
+    "medium": {
+      "src": "/assets/styling-9338-medium.webp",
+      "width": 786,
+      "height": 981
+    },
+    "small": {
+      "src": "/assets/styling-9338-small.webp",
+      "width": 481,
+      "height": 600
+    }
+  },
+  {
+    "id": "styling-9400",
+    "group": "styling",
+    "source": "Styling/internship styling assisting Annet Veerbeek/IMG_9400.jpg",
+    "sourceWidth": 1179,
+    "sourceHeight": 1165,
+    "sourceSha256": "2f8db904e49798a0bb94896983daf5a1566536e5c687ffa2e3a0004f2fca7451",
+    "width": 1179,
+    "height": 1165,
+    "large": {
+      "src": "/assets/styling-9400-large.webp",
+      "width": 1179,
+      "height": 1165
+    },
+    "medium": {
+      "src": "/assets/styling-9400-medium.webp",
+      "width": 786,
+      "height": 777
+    },
+    "small": {
+      "src": "/assets/styling-9400-small.webp",
+      "width": 600,
+      "height": 593
+    }
+  },
+  {
+    "id": "styling-9402",
+    "group": "styling",
+    "source": "Styling/internship styling assisting Annet Veerbeek/IMG_9402.jpg",
+    "sourceWidth": 1179,
+    "sourceHeight": 1162,
+    "sourceSha256": "6a6610c9018a2ba6aee63c57d877ad74d13b27190b6bf0a2bd89b1ea30aa0ac1",
+    "width": 1179,
+    "height": 1162,
+    "large": {
+      "src": "/assets/styling-9402-large.webp",
+      "width": 1179,
+      "height": 1162
+    },
+    "medium": {
+      "src": "/assets/styling-9402-medium.webp",
+      "width": 786,
+      "height": 775
+    },
+    "small": {
+      "src": "/assets/styling-9402-small.webp",
+      "width": 600,
+      "height": 591
+    }
+  },
+  {
+    "id": "styling-9403",
+    "group": "styling",
+    "source": "Styling/internship styling assisting Annet Veerbeek/IMG_9403.jpg",
+    "sourceWidth": 1179,
+    "sourceHeight": 1172,
+    "sourceSha256": "d410114da669c24ce740c198ed33838114f01a7593e6cb53162c76d13a79a520",
+    "width": 1179,
+    "height": 1172,
+    "large": {
+      "src": "/assets/styling-9403-large.webp",
+      "width": 1179,
+      "height": 1172
+    },
+    "medium": {
+      "src": "/assets/styling-9403-medium.webp",
+      "width": 786,
+      "height": 781
+    },
+    "small": {
+      "src": "/assets/styling-9403-small.webp",
+      "width": 600,
+      "height": 596
+    }
+  },
+  {
+    "id": "styling-9404",
+    "group": "styling",
+    "source": "Styling/internship styling assisting Annet Veerbeek/IMG_9404.jpg",
+    "sourceWidth": 1179,
+    "sourceHeight": 1149,
+    "sourceSha256": "2d5e352512fe472d8399b6ed1780078dc5627c2ed27450115ed691951c3854f8",
+    "width": 1179,
+    "height": 1149,
+    "large": {
+      "src": "/assets/styling-9404-large.webp",
+      "width": 1179,
+      "height": 1149
+    },
+    "medium": {
+      "src": "/assets/styling-9404-medium.webp",
+      "width": 786,
+      "height": 766
+    },
+    "small": {
+      "src": "/assets/styling-9404-small.webp",
+      "width": 600,
+      "height": 585
+    }
+  },
+  {
+    "id": "styling-9405",
+    "group": "styling",
+    "source": "Styling/internship styling assisting Annet Veerbeek/IMG_9405.jpg",
+    "sourceWidth": 1179,
+    "sourceHeight": 1161,
+    "sourceSha256": "53932840032aa41ca217ffe7f7c5ae80a27f60d1f0a2fb9b71bca4db66da7bb7",
+    "width": 1179,
+    "height": 1161,
+    "large": {
+      "src": "/assets/styling-9405-large.webp",
+      "width": 1179,
+      "height": 1161
+    },
+    "medium": {
+      "src": "/assets/styling-9405-medium.webp",
+      "width": 786,
+      "height": 774
+    },
+    "small": {
+      "src": "/assets/styling-9405-small.webp",
+      "width": 600,
+      "height": 591
+    }
+  },
+  {
+    "id": "styling-9406",
+    "group": "styling",
+    "source": "Styling/internship styling assisting Annet Veerbeek/IMG_9406.jpg",
+    "sourceWidth": 1179,
+    "sourceHeight": 1156,
+    "sourceSha256": "26dd403ac442e550277bb8d5f0dda5a7aa2da0da476436de9d1ccfb9d805cb82",
+    "width": 1179,
+    "height": 1156,
+    "large": {
+      "src": "/assets/styling-9406-large.webp",
+      "width": 1179,
+      "height": 1156
+    },
+    "medium": {
+      "src": "/assets/styling-9406-medium.webp",
+      "width": 786,
+      "height": 771
+    },
+    "small": {
+      "src": "/assets/styling-9406-small.webp",
+      "width": 600,
+      "height": 588
+    }
+  },
+  {
+    "id": "styling-9407",
+    "group": "styling",
+    "source": "Styling/internship styling assisting Annet Veerbeek/IMG_9407.jpg",
+    "sourceWidth": 1179,
+    "sourceHeight": 1161,
+    "sourceSha256": "fa01e5382a71e1ed9cf1fb6c8dc46f761d367d70c93327a4ed39bc13192c9dd1",
+    "width": 1179,
+    "height": 1161,
+    "large": {
+      "src": "/assets/styling-9407-large.webp",
+      "width": 1179,
+      "height": 1161
+    },
+    "medium": {
+      "src": "/assets/styling-9407-medium.webp",
+      "width": 786,
+      "height": 774
+    },
+    "small": {
+      "src": "/assets/styling-9407-small.webp",
+      "width": 600,
+      "height": 591
+    }
+  },
+  {
+    "id": "styling-9409",
+    "group": "styling",
+    "source": "Styling/internship styling assisting Annet Veerbeek/IMG_9409.jpg",
+    "sourceWidth": 1179,
+    "sourceHeight": 1161,
+    "sourceSha256": "8cd8159262490b150ace73dc261a5cd04ad4d0b157bcf2957c624779fbf1baeb",
+    "width": 1179,
+    "height": 1161,
+    "large": {
+      "src": "/assets/styling-9409-large.webp",
+      "width": 1179,
+      "height": 1161
+    },
+    "medium": {
+      "src": "/assets/styling-9409-medium.webp",
+      "width": 786,
+      "height": 774
+    },
+    "small": {
+      "src": "/assets/styling-9409-small.webp",
+      "width": 600,
+      "height": 591
+    }
+  },
+  {
+    "id": "styling-9410",
+    "group": "styling",
+    "source": "Styling/internship styling assisting Annet Veerbeek/IMG_9410.jpg",
+    "sourceWidth": 1179,
+    "sourceHeight": 1148,
+    "sourceSha256": "0a50c10a5d05ef15287094bc9ee535807e9b3bb33b84161b6d282f82c9816efc",
+    "width": 1179,
+    "height": 1148,
+    "large": {
+      "src": "/assets/styling-9410-large.webp",
+      "width": 1179,
+      "height": 1148
+    },
+    "medium": {
+      "src": "/assets/styling-9410-medium.webp",
+      "width": 786,
+      "height": 765
+    },
+    "small": {
+      "src": "/assets/styling-9410-small.webp",
+      "width": 600,
+      "height": 584
+    }
+  },
+  {
+    "id": "styling-9411",
+    "group": "styling",
+    "source": "Styling/internship styling assisting Annet Veerbeek/IMG_9411.jpg",
+    "sourceWidth": 1179,
+    "sourceHeight": 1156,
+    "sourceSha256": "0b24dcfcad2a407b550628c3b5a15ceb97afd29ae84f8dfef4c5e0fe1aa1666f",
+    "width": 1179,
+    "height": 1156,
+    "large": {
+      "src": "/assets/styling-9411-large.webp",
+      "width": 1179,
+      "height": 1156
+    },
+    "medium": {
+      "src": "/assets/styling-9411-medium.webp",
+      "width": 786,
+      "height": 771
+    },
+    "small": {
+      "src": "/assets/styling-9411-small.webp",
+      "width": 600,
+      "height": 588
+    }
+  },
+  {
+    "id": "styling-9413",
+    "group": "styling",
+    "source": "Styling/internship styling assisting Annet Veerbeek/IMG_9413.jpg",
+    "sourceWidth": 1179,
+    "sourceHeight": 1161,
+    "sourceSha256": "2be047569e5b0392a04fcff28918051caa61a5bf320d0aa82f52a7cf25c889ad",
+    "width": 1179,
+    "height": 1161,
+    "large": {
+      "src": "/assets/styling-9413-large.webp",
+      "width": 1179,
+      "height": 1161
+    },
+    "medium": {
+      "src": "/assets/styling-9413-medium.webp",
+      "width": 786,
+      "height": 774
+    },
+    "small": {
+      "src": "/assets/styling-9413-small.webp",
+      "width": 600,
+      "height": 591
+    }
+  },
+  {
+    "id": "styling-9414",
+    "group": "styling",
+    "source": "Styling/internship styling assisting Annet Veerbeek/IMG_9414.jpg",
+    "sourceWidth": 1179,
+    "sourceHeight": 1169,
+    "sourceSha256": "5ca4ea495ceca8d6961fc9629c5c8f2ef783705a828e83f48f3493846fc40216",
+    "width": 1179,
+    "height": 1169,
+    "large": {
+      "src": "/assets/styling-9414-large.webp",
+      "width": 1179,
+      "height": 1169
+    },
+    "medium": {
+      "src": "/assets/styling-9414-medium.webp",
+      "width": 786,
+      "height": 779
+    },
+    "small": {
+      "src": "/assets/styling-9414-small.webp",
+      "width": 600,
+      "height": 595
+    }
+  },
+  {
+    "id": "film-01",
+    "group": "film",
+    "source": "Creative direction/Stills copy/HighRes/Hellion_Still_01_1.12.1.POST.tif",
+    "sourceWidth": 4096,
+    "sourceHeight": 2160,
+    "sourceSha256": "df28f68a352963687b632ef1574855ea0e90294ae6d47ea505ed673333a35fc9",
+    "width": 4096,
+    "height": 2160,
+    "large": {
+      "src": "/assets/film-01-large.webp",
+      "width": 1800,
+      "height": 949
+    },
+    "medium": {
+      "src": "/assets/film-01-medium.webp",
+      "width": 1200,
+      "height": 633
+    },
+    "small": {
+      "src": "/assets/film-01-small.webp",
+      "width": 600,
+      "height": 316
+    }
+  },
+  {
+    "id": "film-02",
+    "group": "film",
+    "source": "Creative direction/Stills copy/HighRes/Hellion_Still_02_1.15.1.POST.tif",
+    "sourceWidth": 4096,
+    "sourceHeight": 2160,
+    "sourceSha256": "09616d8ba7b8e97789c20eed6a0b6446a0106b52d73f57ada2acd459a147d143",
+    "width": 4096,
+    "height": 2160,
+    "large": {
+      "src": "/assets/film-02-large.webp",
+      "width": 1800,
+      "height": 949
+    },
+    "medium": {
+      "src": "/assets/film-02-medium.webp",
+      "width": 1200,
+      "height": 633
+    },
+    "small": {
+      "src": "/assets/film-02-small.webp",
+      "width": 600,
+      "height": 316
+    }
+  },
+  {
+    "id": "film-03",
+    "group": "film",
+    "source": "Creative direction/Stills copy/HighRes/Hellion_Still_03_1.22.1.POST.tif",
+    "sourceWidth": 4096,
+    "sourceHeight": 2160,
+    "sourceSha256": "3086ecc5b2f79fb977cf59289826b6f086f77ac507993850c397d9ffa76a0b48",
+    "width": 4096,
+    "height": 2160,
+    "large": {
+      "src": "/assets/film-03-large.webp",
+      "width": 1800,
+      "height": 949
+    },
+    "medium": {
+      "src": "/assets/film-03-medium.webp",
+      "width": 1200,
+      "height": 633
+    },
+    "small": {
+      "src": "/assets/film-03-small.webp",
+      "width": 600,
+      "height": 316
+    }
+  },
+  {
+    "id": "film-04",
+    "group": "film",
+    "source": "Creative direction/Stills copy/HighRes/Hellion_Still_04_1.23.1.POST.tif",
+    "sourceWidth": 4096,
+    "sourceHeight": 2160,
+    "sourceSha256": "65d4b5507a89d19c15aeda20a0bdf036c313fc06942a309408cf51eb201f314a",
+    "width": 4096,
+    "height": 2160,
+    "large": {
+      "src": "/assets/film-04-large.webp",
+      "width": 1800,
+      "height": 949
+    },
+    "medium": {
+      "src": "/assets/film-04-medium.webp",
+      "width": 1200,
+      "height": 633
+    },
+    "small": {
+      "src": "/assets/film-04-small.webp",
+      "width": 600,
+      "height": 316
+    }
+  },
+  {
+    "id": "film-05",
+    "group": "film",
+    "source": "Creative direction/Stills copy/HighRes/Hellion_Still_05_1.24.1.POST.tif",
+    "sourceWidth": 4096,
+    "sourceHeight": 2160,
+    "sourceSha256": "cb4fe347828ce7ba89d8d9bb15c25f32f07925abc8a4314dca85b125350807c7",
+    "width": 4096,
+    "height": 2160,
+    "large": {
+      "src": "/assets/film-05-large.webp",
+      "width": 1800,
+      "height": 949
+    },
+    "medium": {
+      "src": "/assets/film-05-medium.webp",
+      "width": 1200,
+      "height": 633
+    },
+    "small": {
+      "src": "/assets/film-05-small.webp",
+      "width": 600,
+      "height": 316
+    }
+  },
+  {
+    "id": "film-06",
+    "group": "film",
+    "source": "Creative direction/Stills copy/HighRes/Hellion_Still_06_2.1.1.POST.tif",
+    "sourceWidth": 4096,
+    "sourceHeight": 2160,
+    "sourceSha256": "16d6547d6eaf978b6293ad3cb9d3e0d373f651922cbedc9c4b0eae411676f9f1",
+    "width": 4096,
+    "height": 2160,
+    "large": {
+      "src": "/assets/film-06-large.webp",
+      "width": 1800,
+      "height": 949
+    },
+    "medium": {
+      "src": "/assets/film-06-medium.webp",
+      "width": 1200,
+      "height": 633
+    },
+    "small": {
+      "src": "/assets/film-06-small.webp",
+      "width": 600,
+      "height": 316
+    }
+  },
+  {
+    "id": "film-07",
+    "group": "film",
+    "source": "Creative direction/Stills copy/HighRes/Hellion_Still_07_2.1.2.POST.tif",
+    "sourceWidth": 4096,
+    "sourceHeight": 2160,
+    "sourceSha256": "e93736e09e4352b8e1eb042994fb3217d6d93fc3c03257cfe015aa2ed9b93bcf",
+    "width": 4096,
+    "height": 2160,
+    "large": {
+      "src": "/assets/film-07-large.webp",
+      "width": 1800,
+      "height": 949
+    },
+    "medium": {
+      "src": "/assets/film-07-medium.webp",
+      "width": 1200,
+      "height": 633
+    },
+    "small": {
+      "src": "/assets/film-07-small.webp",
+      "width": 600,
+      "height": 316
+    }
+  },
+  {
+    "id": "film-08",
+    "group": "film",
+    "source": "Creative direction/Stills copy/HighRes/Hellion_Still_08_1.17.1.POST.tif",
+    "sourceWidth": 4096,
+    "sourceHeight": 2160,
+    "sourceSha256": "19923a4200ff13aa7be30a25780a980717650f2d9a57cb4211defb97d36728a6",
+    "width": 4096,
+    "height": 2160,
+    "large": {
+      "src": "/assets/film-08-large.webp",
+      "width": 1800,
+      "height": 949
+    },
+    "medium": {
+      "src": "/assets/film-08-medium.webp",
+      "width": 1200,
+      "height": 633
+    },
+    "small": {
+      "src": "/assets/film-08-small.webp",
+      "width": 600,
+      "height": 316
+    }
+  },
+  {
+    "id": "film-09",
+    "group": "film",
+    "source": "Creative direction/Stills copy/HighRes/Hellion_Still_09_1.26.1.POST.tif",
+    "sourceWidth": 4096,
+    "sourceHeight": 2160,
+    "sourceSha256": "df6e79eb066df0b5f3f2841cfb514f4fe83a75f9303fc13be8b5eea4697e8882",
+    "width": 4096,
+    "height": 2160,
+    "large": {
+      "src": "/assets/film-09-large.webp",
+      "width": 1800,
+      "height": 949
+    },
+    "medium": {
+      "src": "/assets/film-09-medium.webp",
+      "width": 1200,
+      "height": 633
+    },
+    "small": {
+      "src": "/assets/film-09-small.webp",
+      "width": 600,
+      "height": 316
+    }
+  },
+  {
+    "id": "film-10",
+    "group": "film",
+    "source": "Creative direction/Stills copy/HighRes/Hellion_Still_10_1.32.1.POST.tif",
+    "sourceWidth": 4096,
+    "sourceHeight": 2160,
+    "sourceSha256": "280fb7c1be51c284e9c41bbcf149c3459c4a7ceeeec5a9d69b273b542c993c94",
+    "width": 4096,
+    "height": 2160,
+    "large": {
+      "src": "/assets/film-10-large.webp",
+      "width": 1800,
+      "height": 949
+    },
+    "medium": {
+      "src": "/assets/film-10-medium.webp",
+      "width": 1200,
+      "height": 633
+    },
+    "small": {
+      "src": "/assets/film-10-small.webp",
+      "width": 600,
+      "height": 316
+    }
+  },
+  {
+    "id": "film-11",
+    "group": "film",
+    "source": "Creative direction/Stills copy/HighRes/Hellion_Still_11_1.33.1.POST.tif",
+    "sourceWidth": 4096,
+    "sourceHeight": 2160,
+    "sourceSha256": "376a4e01f4e5279c0a277610229ccc2b2ebb8f84bb0d80b752fbeae4752d4e2b",
+    "width": 4096,
+    "height": 2160,
+    "large": {
+      "src": "/assets/film-11-large.webp",
+      "width": 1800,
+      "height": 949
+    },
+    "medium": {
+      "src": "/assets/film-11-medium.webp",
+      "width": 1200,
+      "height": 633
+    },
+    "small": {
+      "src": "/assets/film-11-small.webp",
+      "width": 600,
+      "height": 316
+    }
+  },
+  {
+    "id": "film-12",
+    "group": "film",
+    "source": "Creative direction/Stills copy/HighRes/Hellion_Still_12_1.44.1.POST.tif",
+    "sourceWidth": 4096,
+    "sourceHeight": 2160,
+    "sourceSha256": "5ab8dc1c45b3e3f2f82c49ab14d97575362e84566199e06dcb9b020958370892",
+    "width": 4096,
+    "height": 2160,
+    "large": {
+      "src": "/assets/film-12-large.webp",
+      "width": 1800,
+      "height": 949
+    },
+    "medium": {
+      "src": "/assets/film-12-medium.webp",
+      "width": 1200,
+      "height": 633
+    },
+    "small": {
+      "src": "/assets/film-12-small.webp",
+      "width": 600,
+      "height": 316
+    }
+  },
+  {
+    "id": "film-13",
+    "group": "film",
+    "source": "Creative direction/Stills copy/HighRes/Hellion_Still_13_1.45.1.POST.tif",
+    "sourceWidth": 4096,
+    "sourceHeight": 2160,
+    "sourceSha256": "834f3d23c7ecc36b9c3b93ac6e6a9ea6e61c662a3e9ebc522e52be38e55a1cd9",
+    "width": 4096,
+    "height": 2160,
+    "large": {
+      "src": "/assets/film-13-large.webp",
+      "width": 1800,
+      "height": 949
+    },
+    "medium": {
+      "src": "/assets/film-13-medium.webp",
+      "width": 1200,
+      "height": 633
+    },
+    "small": {
+      "src": "/assets/film-13-small.webp",
+      "width": 600,
+      "height": 316
+    }
+  },
+  {
+    "id": "about-01",
+    "group": "about",
+    "source": "About/684F9C4A-9D03-4A19-BAE8-BDFDF548AD8D.jpg",
+    "sourceWidth": 1122,
+    "sourceHeight": 1402,
+    "sourceSha256": "41930bbb07eb10498462196d95cec187278d4fe45443eae41c255588abd1f8c9",
+    "width": 1122,
+    "height": 1402,
+    "large": {
+      "src": "/assets/about-01-large.webp",
+      "width": 1122,
+      "height": 1402
+    },
+    "medium": {
+      "src": "/assets/about-01-medium.webp",
+      "width": 748,
+      "height": 935
+    },
+    "small": {
+      "src": "/assets/about-01-small.webp",
+      "width": 480,
+      "height": 600
+    }
+  },
+  {
+    "id": "about-02",
+    "group": "about",
+    "source": "About/IMG_4388.jpg",
+    "sourceWidth": 1179,
+    "sourceHeight": 1754,
+    "sourceSha256": "8d629a23c49041b12adf52664206b285ffdc3526d005730146a476e4b21f7fb2",
+    "width": 1179,
+    "height": 1754,
+    "large": {
+      "src": "/assets/about-02-large.webp",
+      "width": 1179,
+      "height": 1754
+    },
+    "medium": {
+      "src": "/assets/about-02-medium.webp",
+      "width": 786,
+      "height": 1169
+    },
+    "small": {
+      "src": "/assets/about-02-small.webp",
+      "width": 403,
+      "height": 600
+    }
+  },
+  {
+    "id": "about-03",
+    "group": "about",
+    "source": "About/IMG_4389.jpg",
+    "sourceWidth": 1179,
+    "sourceHeight": 1752,
+    "sourceSha256": "5eb6c508d5df7321826d3ff41ded442e36779a65d7f538d3cab9dbf65adc47e8",
+    "width": 1179,
+    "height": 1752,
+    "large": {
+      "src": "/assets/about-03-large.webp",
+      "width": 1179,
+      "height": 1752
+    },
+    "medium": {
+      "src": "/assets/about-03-medium.webp",
+      "width": 786,
+      "height": 1168
+    },
+    "small": {
+      "src": "/assets/about-03-small.webp",
+      "width": 404,
+      "height": 600
+    }
+  },
+  {
+    "id": "about-04",
+    "group": "about",
+    "source": "About/IMG_4390.jpg",
+    "sourceWidth": 1179,
+    "sourceHeight": 1748,
+    "sourceSha256": "f34a7251442bf4b75861684107eac1a7616f26ac6da22358bb9dbb67a5d2f426",
+    "width": 1179,
+    "height": 1748,
+    "large": {
+      "src": "/assets/about-04-large.webp",
+      "width": 1179,
+      "height": 1748
+    },
+    "medium": {
+      "src": "/assets/about-04-medium.webp",
+      "width": 786,
+      "height": 1165
+    },
+    "small": {
+      "src": "/assets/about-04-small.webp",
+      "width": 405,
+      "height": 600
+    }
+  },
+  {
+    "id": "about-05",
+    "group": "about",
+    "source": "About/IMG_4391.jpg",
+    "sourceWidth": 1179,
+    "sourceHeight": 756,
+    "sourceSha256": "37618ce8b0e0f7e5d2574ae09b151d599739b1b7d08231f9ef6f62fc55e13643",
+    "width": 1179,
+    "height": 756,
+    "large": {
+      "src": "/assets/about-05-large.webp",
+      "width": 1179,
+      "height": 756
+    },
+    "medium": {
+      "src": "/assets/about-05-medium.webp",
+      "width": 786,
+      "height": 504
+    },
+    "small": {
+      "src": "/assets/about-05-small.webp",
+      "width": 600,
+      "height": 385
+    }
+  },
+  {
+    "id": "about-06",
+    "group": "about",
+    "source": "About/IMG_4392 2.jpg",
+    "sourceWidth": 1179,
+    "sourceHeight": 755,
+    "sourceSha256": "9cb6d2758f36e8cf2adbd3650b02db3b5f4c88e177cefb471e40e9f725e0e785",
+    "width": 1179,
+    "height": 755,
+    "large": {
+      "src": "/assets/about-06-large.webp",
+      "width": 1179,
+      "height": 755
+    },
+    "medium": {
+      "src": "/assets/about-06-medium.webp",
+      "width": 786,
+      "height": 503
+    },
+    "small": {
+      "src": "/assets/about-06-small.webp",
+      "width": 600,
+      "height": 384
+    }
+  },
+  {
+    "id": "presentation-8535",
+    "group": "presentation",
+    "source": "IMG_8535.WEBP",
+    "sourceWidth": 683,
+    "sourceHeight": 1024,
+    "sourceSha256": "7fab5a85fe73ba5b1621efaf8eebde0526ea04d932a64afb62d5f43cc18301ce",
+    "width": 683,
+    "height": 1024,
+    "large": {
+      "src": "/assets/presentation-8535-large.webp",
+      "width": 683,
+      "height": 1024
+    },
+    "medium": {
+      "src": "/assets/presentation-8535-medium.webp",
+      "width": 455,
+      "height": 683
+    },
+    "small": {
+      "src": "/assets/presentation-8535-small.webp",
+      "width": 400,
+      "height": 600
+    }
+  },
+  {
+    "id": "presentation-8540",
+    "group": "presentation",
+    "source": "IMG_8540.WEBP",
+    "sourceWidth": 683,
+    "sourceHeight": 1024,
+    "sourceSha256": "2f69ac29b24bdc14795df8fce823bd63c62f61bafe674cb6ed043ab62328cede",
+    "width": 683,
+    "height": 1024,
+    "large": {
+      "src": "/assets/presentation-8540-large.webp",
+      "width": 683,
+      "height": 1024
+    },
+    "medium": {
+      "src": "/assets/presentation-8540-medium.webp",
+      "width": 455,
+      "height": 683
+    },
+    "small": {
+      "src": "/assets/presentation-8540-small.webp",
+      "width": 400,
+      "height": 600
+    }
+  },
+  {
+    "id": "presentation-8539",
+    "group": "presentation",
+    "source": "IMG_8539.WEBP",
+    "sourceWidth": 1536,
+    "sourceHeight": 1024,
+    "sourceSha256": "02fefab0c41078b294f454075c5deeb05daf19937daff2c064c03e9ef444511d",
+    "width": 1536,
+    "height": 1024,
+    "large": {
+      "src": "/assets/presentation-8539-large.webp",
+      "width": 1536,
+      "height": 1024
+    },
+    "medium": {
+      "src": "/assets/presentation-8539-medium.webp",
+      "width": 1024,
+      "height": 683
+    },
+    "small": {
+      "src": "/assets/presentation-8539-small.webp",
+      "width": 600,
+      "height": 400
+    }
+  },
+  {
+    "id": "presentation-8537",
+    "group": "presentation",
+    "source": "IMG_8537.JPG",
+    "sourceWidth": 4000,
+    "sourceHeight": 6000,
+    "sourceSha256": "4e72d1935c89daacb08bdf1a06b3e6322e180ae2f9a0466fc2d7b28f74dc9688",
+    "width": 4000,
+    "height": 6000,
+    "large": {
+      "src": "/assets/presentation-8537-large.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/presentation-8537-medium.webp",
+      "width": 800,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/presentation-8537-small.webp",
+      "width": 400,
+      "height": 600
+    }
+  },
+  {
+    "id": "presentation-8536",
+    "group": "presentation",
+    "source": "IMG_8536.JPG",
+    "sourceWidth": 4000,
+    "sourceHeight": 6000,
+    "sourceSha256": "b28e1b42c6fc601013ffeac398664dd06fd491750ed421e2c95b1e9f53da6e79",
+    "width": 4000,
+    "height": 6000,
+    "large": {
+      "src": "/assets/presentation-8536-large.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/presentation-8536-medium.webp",
+      "width": 800,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/presentation-8536-small.webp",
+      "width": 400,
+      "height": 600
+    }
+  },
+  {
+    "id": "presentation-8538",
+    "group": "presentation",
+    "source": "IMG_8538.JPG",
+    "sourceWidth": 4000,
+    "sourceHeight": 6000,
+    "sourceSha256": "8b4923f3a91ce367c034644073e26a7a78f84a3c61a5ef8e2406d7eee436c6a1",
+    "width": 4000,
+    "height": 6000,
+    "large": {
+      "src": "/assets/presentation-8538-large.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    "medium": {
+      "src": "/assets/presentation-8538-medium.webp",
+      "width": 800,
+      "height": 1200
+    },
+    "small": {
+      "src": "/assets/presentation-8538-small.webp",
+      "width": 400,
+      "height": 600
+    }
+  }
+]
