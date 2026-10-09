@@ -56,7 +56,7 @@ export function createWash() {
       state.cover = 0;
       state.reveal = 0;
       canvas.classList.add('is-on');
-      return new Promise((resolve) => gsap.to(state, { cover: 1, duration: 0.6, ease: 'power2.in', onUpdate: draw, onComplete: resolve }));
+      return new Promise((resolve) => gsap.to(state, { cover: 1, duration: 0.5, ease: 'power2.inOut', onUpdate: draw, onComplete: resolve }));
     },
     reveal() {
       return new Promise((resolve) => gsap.to(state, {

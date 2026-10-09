@@ -188,11 +188,15 @@ export function mountTable(stage, { onHover, onOpen, viewerRect, reducedMotion }
   // Per-frame fade for photographs as their textures arrive.
   const arrival = new Map();
   let opening = null; // { mesh, rect, others } while a photograph lifts to full frame
+  // Skip drawing when nothing on the table has changed since the last frame.
+  let lastState = '';
+  let fading = false;
   let hovered = null;
   let pointer = null;
 
   function frame(now) {
     // A few uploads per frame keeps a fast fling from stuttering.
+    const uploaded = uploads.length > 0;
     for (let n = 0; n < 3 && uploads.length; n += 1) {
       const id = uploads.shift();
       const entry = textures.get(id);
@@ -211,6 +215,15 @@ export function mountTable(stage, { onHover, onOpen, viewerRect, reducedMotion }
     last.y = pos.y;
     if (!reducedMotion()) fx.lens += (clamp(speed / 60, 0, 1) * 0.14 - fx.lens) * 0.12;
 
+    const state = `${pos.x.toFixed(2)},${pos.y.toFixed(2)},${fx.zoom.toFixed(4)},${fx.lens.toFixed(4)},${fx.alpha.toFixed(3)},${view.x},${view.y}`;
+    const idle = state === lastState && !uploaded && !fading && !opening && !queue.length && !loading;
+    lastState = state;
+    if (!idle) draw(now);
+    hover();
+  }
+
+  function draw(now) {
+    fading = false;
     collect();
     instances.forEach((tile, i) => {
       const m = mesh(i);
@@ -218,6 +231,7 @@ export function mountTable(stage, { onHover, onOpen, viewerRect, reducedMotion }
       const texture = want(tile.id, now);
       const born = arrival.get(tile.id);
       const shown = texture ? (born ? clamp((now - born) / 450, 0, 1) : 1) : 0;
+      if (texture && shown < 1) fading = true;
       u.uMap.value = texture || blank;
       u.uReady.value = shown * shown * (3 - 2 * shown);
       u.uRect.value.set(tile.x, tile.y, tile.w, tile.h);
@@ -230,7 +244,9 @@ export function mountTable(stage, { onHover, onOpen, viewerRect, reducedMotion }
     if (opening) opening.mesh.material.uniforms.uRect.value.set(...opening.rect);
     pump();
     renderer.render(scene, camera);
+  }
 
+  function hover() {
     if (pointer && !drag && !opening && speed < 0.5) {
       const tile = hit(pointer.x, pointer.y);
       if (tile?.id !== hovered?.id) { hovered = tile; onHover(tile?.id ?? null, pointer); }
@@ -381,7 +397,7 @@ export function mountTable(stage, { onHover, onOpen, viewerRect, reducedMotion }
         else enter();
       };
       if (first || !ids.length) swap();
-      else gsap.to(fx, { alpha: 0, duration: 0.22, ease: 'power2.in', overwrite: true, onComplete: swap });
+      else gsap.to(fx, { alpha: 0, duration: 0.18, ease: 'power2.out', overwrite: true, onComplete: swap });
     },
     start() { frameId = requestAnimationFrame(loop); },
     pause(paused) {

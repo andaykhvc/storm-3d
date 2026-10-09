@@ -1,4 +1,5 @@
 // Homepage: the light table, its filters and the Table / Index switch.
+import { gsap } from 'gsap';
 import { archive, projects, projectOf } from '../content/data.js';
 import { label } from '../views/kit.js';
 import { viewerRect } from './viewer.js';
@@ -20,6 +21,10 @@ export function mountHome(app, { gate, reducedMotion, onOpen }) {
   const modes = [...app.querySelectorAll('[data-view-mode]')];
   let table = null;
   let alive = true;
+  // The caption trails the pointer slightly rather than being nailed to it.
+  const captionX = gsap.quickTo(caption, 'x', { duration: 0.25, ease: 'power3.out' });
+  const captionY = gsap.quickTo(caption, 'y', { duration: 0.25, ease: 'power3.out' });
+  let captionShown = false;
 
   const setMode = (mode) => {
     modes.forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.viewMode === mode)));
@@ -42,9 +47,12 @@ export function mountHome(app, { gate, reducedMotion, onOpen }) {
   app.addEventListener('click', onFilter);
 
   const onHover = (id, pointer) => {
-    if (!id || !pointer) { caption.classList.remove('is-on'); return; }
+    if (!id || !pointer) { caption.classList.remove('is-on'); captionShown = false; return; }
     caption.textContent = label(id);
-    caption.style.transform = `translate(${Math.round(pointer.x + 18)}px, ${Math.round(pointer.y + 18)}px)`;
+    // The first appearance lands in place; after that it follows.
+    if (!captionShown) gsap.set(caption, { x: pointer.x + 18, y: pointer.y + 18 });
+    else { captionX(pointer.x + 18); captionY(pointer.y + 18); }
+    captionShown = true;
     caption.classList.add('is-on');
     stage.classList.add('is-pointing');
   };

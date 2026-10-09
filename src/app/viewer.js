@@ -4,13 +4,18 @@ import { gsap } from 'gsap';
 import { assets } from '../content/data.js';
 import { describe, label } from '../views/kit.js';
 
-// The frame photographs are fitted into. The light table lifts into the same frame.
+// The frame photographs are fitted into. The light table lifts into the same frame. Measured from a
+// probe laid out with the same CSS variables, so safe-area insets and breakpoints apply.
+let probe;
 export function viewerRect() {
-  const style = getComputedStyle(document.documentElement);
-  const top = parseFloat(style.getPropertyValue('--viewer-top'));
-  const side = parseFloat(style.getPropertyValue('--viewer-side'));
-  const bottom = parseFloat(style.getPropertyValue('--viewer-bottom'));
-  return [side, top, innerWidth - side * 2, innerHeight - top - bottom];
+  if (!probe) {
+    probe = document.createElement('div');
+    probe.className = 'viewer-probe';
+    probe.setAttribute('aria-hidden', 'true');
+    document.body.append(probe);
+  }
+  const { left, top, width, height } = probe.getBoundingClientRect();
+  return [left, top, width, height];
 }
 
 function fit(id) {
@@ -61,17 +66,20 @@ export function bindViewer(root, { reducedMotion, onToggle = () => {} }) {
       return;
     }
     gsap.fromTo(dialog, { '--veil': 0 }, { '--veil': 1, duration: 0.4, ease: 'power2.out' });
-    gsap.fromTo(image, { x: rect.left - box.x, y: rect.top - box.y, scaleX: rect.width / box.w, scaleY: rect.height / box.h }, { x: 0, y: 0, scaleX: 1, scaleY: 1, duration: 0.62, ease: 'expo.out' });
+    gsap.fromTo(image, { x: rect.left - box.x, y: rect.top - box.y, scaleX: rect.width / box.w, scaleY: rect.height / box.h }, { x: 0, y: 0, scaleX: 1, scaleY: 1, duration: 0.5, ease: 'expo.out' });
   }
 
-  function step(delta) {
+  // Arrow keys step instantly; buttons and swipes get a short slide in the direction of travel.
+  function step(delta, { animate = false } = {}) {
     if (set.length < 2) return;
     index = (index + delta + set.length) % set.length;
     place(set[index]);
-    if (!reducedMotion()) gsap.fromTo(image, { x: delta * 40, opacity: 0.4 }, { x: 0, opacity: 1, duration: 0.32, ease: 'power3.out' });
+    gsap.killTweensOf(image);
+    gsap.set(image, { x: 0, opacity: 1 });
+    if (animate && !reducedMotion()) gsap.fromTo(image, { x: delta * 32, opacity: 0.5 }, { x: 0, opacity: 1, duration: 0.22, ease: 'power3.out' });
   }
 
-  function close() {
+  function close({ instant = false } = {}) {
     if (!dialog.open) return;
     const id = set[index];
     // Return to the photograph now showing, if it is on the page.
@@ -85,30 +93,32 @@ export function bindViewer(root, { reducedMotion, onToggle = () => {} }) {
       gsap.set(image, { clearProps: 'transform,opacity' });
       back?.focus({ preventScroll: true });
     };
+    if (instant) return finish();
     if (reducedMotion() || !visible) {
-      gsap.to(dialog, { '--veil': 0, duration: 0.18, ease: 'power1.in', onComplete: finish });
+      gsap.to(dialog, { '--veil': 0, duration: 0.18, ease: 'power1.out', onComplete: finish });
       return;
     }
     const box = fit(id);
-    gsap.to(dialog, { '--veil': 0, duration: 0.3, ease: 'power2.in' });
-    gsap.to(image, { x: rect.left - box.x, y: rect.top - box.y, scaleX: rect.width / box.w, scaleY: rect.height / box.h, duration: 0.42, ease: 'expo.inOut', onComplete: finish });
+    gsap.to(dialog, { '--veil': 0, duration: 0.28, ease: 'power2.out' });
+    gsap.to(image, { x: rect.left - box.x, y: rect.top - box.y, scaleX: rect.width / box.w, scaleY: rect.height / box.h, duration: 0.34, ease: 'expo.inOut', onComplete: finish });
   }
 
   const onClick = (event) => {
     const button = event.target.closest('.photo[data-view]');
     if (!button) return;
-    open(button.dataset.view, button.dataset.set.split(','), { from: button });
+    // Keyboard activation (detail 0) opens without motion.
+    open(button.dataset.view, button.dataset.set.split(','), { from: button, instant: event.detail === 0 });
   };
   const onControl = (event) => {
-    if (event.target.closest('.viewer-close')) return close();
+    if (event.target.closest('.viewer-close')) return close({ instant: event.detail === 0 });
     const stepButton = event.target.closest('[data-step]');
-    if (stepButton) return step(Number(stepButton.dataset.step));
+    if (stepButton) return step(Number(stepButton.dataset.step), { animate: event.detail !== 0 });
     if (event.target === dialog || event.target.classList.contains('viewer-stage')) close();
   };
   const onKey = (event) => {
     if (event.key === 'ArrowRight') step(1);
     else if (event.key === 'ArrowLeft') step(-1);
-    else if (event.key === 'Escape') { event.preventDefault(); close(); }
+    else if (event.key === 'Escape') { event.preventDefault(); close({ instant: true }); }
   };
   const onDown = (event) => { swipe = { x: event.clientX, y: event.clientY }; };
   const onUp = (event) => {
@@ -116,7 +126,7 @@ export function bindViewer(root, { reducedMotion, onToggle = () => {} }) {
     const dx = event.clientX - swipe.x;
     const dy = event.clientY - swipe.y;
     swipe = null;
-    if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) step(dx < 0 ? 1 : -1);
+    if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) step(dx < 0 ? 1 : -1, { animate: true });
     else if (dy > 90 && Math.abs(dy) > Math.abs(dx)) close();
   };
   root.addEventListener('click', onClick);
